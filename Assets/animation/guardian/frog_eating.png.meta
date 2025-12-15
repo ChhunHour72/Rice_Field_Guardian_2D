@@ -1,0 +1,906 @@
+fileFormatVersion: 2
+guid: 1e3e0b1867a5d5e4a99434b8b76305bf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: frog_eating_0
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1536
+        width: 258
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 870c42805adfbc34a9e7f2becc1cb4a6
+      internalID: -1467125525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_1
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1536
+        width: 257
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe90e96d13f3254d923982f39f2b70a
+      internalID: -271484674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_2
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 1536
+        width: 262
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df08b7090cf30b24785d7734e68d84cc
+      internalID: 1778806196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_3
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 1536
+        width: 258
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a058d25c4ac4a448ae7f6e29506fd8
+      internalID: -1628770624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_4
+      rect:
+        serializedVersion: 2
+        x: 2585
+        y: 1536
+        width: 261
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e400bcedfe70647a51fa44c51a2e21
+      internalID: -23327904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_5
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 1536
+        width: 276
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33eb5ceadc2685e4295ab877e3239ea3
+      internalID: 1850313918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_6
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1239
+        width: 316
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb064c216079c942a89fa0ec529c42a
+      internalID: 332190611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_7
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1239
+        width: 384
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdba6d3edd3db0d45957cbcb3c58bb4b
+      internalID: 1604762304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_8
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 1239
+        width: 442
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93ae529c296dca4887f58282a3d3a8c
+      internalID: 1792753418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_9
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 1239
+        width: 438
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e1a63277e324f49b58f0ae0bf6af02
+      internalID: 1765001512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_10
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 1239
+        width: 439
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483ef255f13ff4a4e95c6a1d0990d14c
+      internalID: -1007843347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_11
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 1239
+        width: 440
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31faf0408d760094589b5dfe19415543
+      internalID: 1958424383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_12
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 944
+        width: 438
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4512092fe35764848a4fdbfcdaaab921
+      internalID: -1469462657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_13
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 944
+        width: 439
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2938d2d93dfea46bd2fa39eff24620
+      internalID: 919594803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_14
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 944
+        width: 442
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a27c35b098a524ab9755c8c6f1dbe9
+      internalID: -1962249383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_15
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 944
+        width: 438
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b147a7a402ec9547b49966fdc144743
+      internalID: 1145914345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_16
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 944
+        width: 439
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de32747fefcc3a44a9336d25fa03295
+      internalID: 161111582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_17
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 944
+        width: 440
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d83966b5cc89c4d9aef29bd91f6683
+      internalID: -694435417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_18
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 647
+        width: 438
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d23784603b0c0f4da68f6f8d62387bb
+      internalID: 80740013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 647
+        width: 439
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aabf783a629332a48ab698c19df94fcc
+      internalID: -141397835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_20
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 647
+        width: 442
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c8a5a5320638447be1e4e05e81c0a6
+      internalID: -1132603197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_21
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 647
+        width: 438
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887c8cd4c0e551b419f77005a92f52c4
+      internalID: -1923608485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_22
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 647
+        width: 439
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858fafb48e1926346aad1b897c611014
+      internalID: -1101046343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_23
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 647
+        width: 440
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00a4ee9d1f75fd42a219ed5d1dfb062
+      internalID: 1558557408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_24
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 352
+        width: 438
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfe37df23a7db34e9d96406721e8803
+      internalID: 26702296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_25
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 352
+        width: 419
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e06797f7b1bb541a5c9428050a0d8c
+      internalID: 62765775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_26
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 352
+        width: 391
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d6604c94ed204449a4e013f606b206
+      internalID: 304568110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_27
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 352
+        width: 352
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb6adcc2ee76e641abb429ef5074ac2
+      internalID: 954719805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_28
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 352
+        width: 343
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7890bdc4f12924f84a5bdcbd6e081e
+      internalID: 1745992995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_29
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 352
+        width: 323
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac895b7b313872841a4d2d1d0588311c
+      internalID: -743252900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_30
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 55
+        width: 283
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1642b89e8714049876139caf4fe8a2
+      internalID: 2038788561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_31
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 55
+        width: 265
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f62a4ccdbfa24541b202f3dc72255ab
+      internalID: -241445652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_32
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 55
+        width: 265
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afed9355904b21242a14e52aff499673
+      internalID: -659874874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_33
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 55
+        width: 262
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfcb2c2f92ad72d46b9a3e77f070ab7e
+      internalID: -1976851676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_34
+      rect:
+        serializedVersion: 2
+        x: 2585
+        y: 55
+        width: 261
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6455f3e9ceea3804f955497a76c7218a
+      internalID: -430815290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog_eating_35
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 55
+        width: 262
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc1bd4bbf0ea644fa0658ca1654410a
+      internalID: -999269591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      frog_eating_0: -1467125525
+      frog_eating_1: -271484674
+      frog_eating_10: -1007843347
+      frog_eating_11: 1958424383
+      frog_eating_12: -1469462657
+      frog_eating_13: 919594803
+      frog_eating_14: -1962249383
+      frog_eating_15: 1145914345
+      frog_eating_16: 161111582
+      frog_eating_17: -694435417
+      frog_eating_18: 80740013
+      frog_eating_19: -141397835
+      frog_eating_2: 1778806196
+      frog_eating_20: -1132603197
+      frog_eating_21: -1923608485
+      frog_eating_22: -1101046343
+      frog_eating_23: 1558557408
+      frog_eating_24: 26702296
+      frog_eating_25: 62765775
+      frog_eating_26: 304568110
+      frog_eating_27: 954719805
+      frog_eating_28: 1745992995
+      frog_eating_29: -743252900
+      frog_eating_3: -1628770624
+      frog_eating_30: 2038788561
+      frog_eating_31: -241445652
+      frog_eating_32: -659874874
+      frog_eating_33: -1976851676
+      frog_eating_34: -430815290
+      frog_eating_35: -999269591
+      frog_eating_4: -23327904
+      frog_eating_5: 1850313918
+      frog_eating_6: 332190611
+      frog_eating_7: 1604762304
+      frog_eating_8: 1792753418
+      frog_eating_9: 1765001512
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

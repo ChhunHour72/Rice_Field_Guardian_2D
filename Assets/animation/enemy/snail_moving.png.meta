@@ -1,0 +1,931 @@
+fileFormatVersion: 2
+guid: d8972ea9333aa0141a7a816bec8b28f4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: snail_moving_2
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 660
+        width: 234
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f907d455775b1914c98c29e2e95acaca
+      internalID: 617773558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_5
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 660
+        width: 234
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47438f54d1e891546beee73805cac938
+      internalID: -374696793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_8
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 662
+        width: 239
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe12f32f1fcde749a56022a940067a2
+      internalID: -711327151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_11
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 662
+        width: 249
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d754e440eefe542a386c68fbb30e22
+      internalID: 672137434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_13
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 662
+        width: 250
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fb7bb4afc075b4e999b7de71c22684
+      internalID: 1516540456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_15
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 662
+        width: 260
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c93c6876126d9428b8bde450823cb1
+      internalID: 112475159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_18
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 528
+        width: 200
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4126d881d2ad6b048a48a7f891209c5b
+      internalID: 1976900224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_20
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 528
+        width: 274
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c61f8c8bb0471d4ca33a6397c0e2333
+      internalID: -1384064619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_23
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 528
+        width: 210
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43aadc61b0045514d84b579104953fdd
+      internalID: -238558378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_25
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 528
+        width: 282
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc995adf171400c469f0719cf2bed64f
+      internalID: 1483734652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_28
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 528
+        width: 226
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1233a9e96cf5564d8ac52711de1d487
+      internalID: -292475934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_29
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 528
+        width: 322
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5701f879d94774c4293cd68ba729d744
+      internalID: -1743426068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_31
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 398
+        width: 233
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ead8888bcd2db43990d06f6aa2cabe
+      internalID: -851327714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_33
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 398
+        width: 309
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81b49fa1616ccf74cbb0a055736dc410
+      internalID: 1962093269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_34
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 398
+        width: 322
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287f18adc7a42e6489785b487d25003c
+      internalID: -1160475031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_35
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 395
+        width: 322
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4910971fdf835e247865c5b2f61e1f44
+      internalID: 2095973077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_37
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 395
+        width: 256
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8b89bbae8c02c42afc2b978a9de1d1
+      internalID: -62016111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_38
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 395
+        width: 320
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886002f3aea1a90428352665e9fd789e
+      internalID: -608795098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 263
+        width: 268
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62adea0d0fd6d5a40806b858da499090
+      internalID: 2033655011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_41
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 263
+        width: 318
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9a719a10c74ac4d8b4b634ad624c02
+      internalID: -133593976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_43
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 263
+        width: 284
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61471ae22bf734e49b6c2dbf6b91fbdc
+      internalID: -213269129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_45
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 263
+        width: 293
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a977b6561264eed4c9788d5a6e1956e6
+      internalID: -507141719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_46
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 263
+        width: 318
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9aaebf48d8ae443a2e6a9f2560477d
+      internalID: -489641753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_47
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 263
+        width: 320
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2217962e1de924ca214b3cbcd6063c
+      internalID: 1929780558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_49
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 131
+        width: 306
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9981c08b8c3e74985e55ce909cdcfd
+      internalID: 1848927063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_50
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 131
+        width: 316
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f1a421d54084046ad3b5993a9e5bbb
+      internalID: 709391213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_51
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 131
+        width: 320
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dacd7aa959f61a041b10ed13f5e1ef25
+      internalID: -1217536474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_52
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 131
+        width: 322
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fa552dcfd3fe94b945f45b3d79c917
+      internalID: 1722566440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_53
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 131
+        width: 320
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7e6d18385b984488b5b33cc263d895
+      internalID: 1161840343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_54
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 134
+        width: 322
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2064c5f134221fe408d621f1cc0a5d04
+      internalID: 567151245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 321
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1470eb101f745e44aad9f860d07dd8e0
+      internalID: 824712803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_56
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 0
+        width: 321
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ec7fd377016ee47af1188c406fe642
+      internalID: 719914569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_57
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 0
+        width: 326
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ac6edd024324c43b4f562929cb8213
+      internalID: 1139731462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_58
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 0
+        width: 326
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0c2675fb2b4a64b940a0c0506af46b
+      internalID: -1800119705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_59
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 0
+        width: 323
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a65751a541a6f34ca73f793e1ce8111
+      internalID: -2117235169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: snail_moving_60
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 0
+        width: 326
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15afb7aea697c9147aa73748d50ae397
+      internalID: 437822945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      snail_moving_0: -567070812
+      snail_moving_1: -1274945704
+      snail_moving_10: -1177272124
+      snail_moving_11: 672137434
+      snail_moving_12: -691561024
+      snail_moving_13: 1516540456
+      snail_moving_14: 1786055776
+      snail_moving_15: 112475159
+      snail_moving_16: -1397412209
+      snail_moving_17: 1873445637
+      snail_moving_18: 1976900224
+      snail_moving_19: -1604273527
+      snail_moving_2: 617773558
+      snail_moving_20: -1384064619
+      snail_moving_21: 1374439265
+      snail_moving_22: 51141477
+      snail_moving_23: -238558378
+      snail_moving_24: -1682837865
+      snail_moving_25: 1483734652
+      snail_moving_26: 1816185602
+      snail_moving_27: -1394729402
+      snail_moving_28: -292475934
+      snail_moving_29: -1743426068
+      snail_moving_3: -918345303
+      snail_moving_30: 963444707
+      snail_moving_31: -851327714
+      snail_moving_32: -148775541
+      snail_moving_33: 1962093269
+      snail_moving_34: -1160475031
+      snail_moving_35: 2095973077
+      snail_moving_36: -305314986
+      snail_moving_37: -62016111
+      snail_moving_38: -608795098
+      snail_moving_39: 896897032
+      snail_moving_4: 956027258
+      snail_moving_40: 2033655011
+      snail_moving_41: -133593976
+      snail_moving_42: -616494379
+      snail_moving_43: -213269129
+      snail_moving_44: -2081740650
+      snail_moving_45: -507141719
+      snail_moving_46: -489641753
+      snail_moving_47: 1929780558
+      snail_moving_48: -529339853
+      snail_moving_49: 1848927063
+      snail_moving_5: -374696793
+      snail_moving_50: 709391213
+      snail_moving_51: -1217536474
+      snail_moving_52: 1722566440
+      snail_moving_53: 1161840343
+      snail_moving_54: 567151245
+      snail_moving_55: 824712803
+      snail_moving_56: 719914569
+      snail_moving_57: 1139731462
+      snail_moving_58: -1800119705
+      snail_moving_59: -2117235169
+      snail_moving_6: -1076505939
+      snail_moving_60: 437822945
+      snail_moving_7: 993560892
+      snail_moving_8: -711327151
+      snail_moving_9: -861466908
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

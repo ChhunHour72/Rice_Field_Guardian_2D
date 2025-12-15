@@ -1,0 +1,906 @@
+fileFormatVersion: 2
+guid: 6700da9097795b741a2640653e470d2c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: scarecrow_idling_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1306
+        width: 154
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ce07fc6b38b65479526e72e85d1a82
+      internalID: -1184172118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_1
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1306
+        width: 154
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962ef735cf947b44caa09a647def26ce
+      internalID: -1532603214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_2
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 1306
+        width: 154
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9818dc6d7a7b1c243a3663b844e12e5f
+      internalID: -2117348431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_3
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1306
+        width: 154
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307a599f49448804cbe5e3ad2118660c
+      internalID: 1747605565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_4
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1306
+        width: 155
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19a3a30691568f4dbe56f39d1b7f8d1
+      internalID: -1196108773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_5
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1306
+        width: 155
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a5b519e3244bf4d9240d9b89fe2113
+      internalID: -989374194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1045
+        width: 152
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044416c5b8f386841b30b59103a038c6
+      internalID: 1975867990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_7
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1045
+        width: 154
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626f4c3b4237dd04399f1f7521edb4d6
+      internalID: 237494031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_8
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1045
+        width: 154
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9724d7c51b3b44944872a71a4a62f7af
+      internalID: 955534884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_9
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1045
+        width: 154
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87cac520ad745a549b19cfab057a701a
+      internalID: -722774313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_10
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1045
+        width: 154
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8aa0d16b1ec6994cb1b0867dee638d5
+      internalID: -1143446968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_11
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1045
+        width: 156
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb626a681b7c254c9b69fd7b6f18696
+      internalID: -774258292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_12
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 784
+        width: 154
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70652b9be9e79f142b413458a08e1e48
+      internalID: 412771997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_13
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 784
+        width: 156
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b9a3d4a2374b44c8501a3aca88464f
+      internalID: -551703214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_14
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 784
+        width: 153
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbae9892e4818b14f8afbe1dd519eaeb
+      internalID: -1493383284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_15
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 784
+        width: 153
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1c430d8a27be54ebde3ee07a3c0a72
+      internalID: 350616609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_16
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 784
+        width: 153
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3966dd919ddc7944c93053da47695f79
+      internalID: -1019052234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_17
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 784
+        width: 151
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a38aef4c931844997ca5e8ad12c4d9
+      internalID: -544297699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_18
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 523
+        width: 150
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc40e4d85729cd4c84436a4b0e69f71
+      internalID: 297212415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_19
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 523
+        width: 150
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d16e4014083ee945a7fbd61f4eef7d0
+      internalID: -502539622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_20
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 523
+        width: 150
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a5da6eeb9241f42ad58f0d2c616776
+      internalID: 564372422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_21
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 523
+        width: 150
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7737f0800cc03c0429cd82fdb1f737ac
+      internalID: -1949790558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_22
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 523
+        width: 150
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab28dcf7a257c04bb666f609ad7ec8e
+      internalID: 114228413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_23
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 523
+        width: 153
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3744cac7b8ebde4ebd3efefa1a28490
+      internalID: -1589115182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_24
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 262
+        width: 153
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20386580c764035488c8512ae39a0c7d
+      internalID: -926861744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_25
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 262
+        width: 153
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ea301435bdd38479a14b8083b9d4c1
+      internalID: -2090701569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_26
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 262
+        width: 156
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75747d12ab6783644ad8d867486960de
+      internalID: 1700884449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_27
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 262
+        width: 153
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9b74a50d0c04b4198cc349f2f302ad
+      internalID: -1531213337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_28
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 262
+        width: 156
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178da99d01e29194dae689df6f1990cb
+      internalID: -337326366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_29
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 262
+        width: 156
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454a694ccbee87c4c8195bfb37c8a6fe
+      internalID: 2002147447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_30
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1
+        width: 154
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aefcba6474b6af449b64df464c9497e
+      internalID: -2054448682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_31
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1
+        width: 152
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bf6f551c24c0d48a40b77a9720cb18
+      internalID: -1706628161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_32
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1
+        width: 152
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53666978db31e184da674ce0b34d3317
+      internalID: 782718022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_33
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1
+        width: 155
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfc2bf9e97928a4fa70300f855aae53
+      internalID: -689185872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_34
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 1
+        width: 155
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e35e07e492298468f3fd334ae9c98c
+      internalID: 130463247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scarecrow_idling_35
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1
+        width: 154
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54af4f2b426d2ea4aa4fc95c8b512be8
+      internalID: -1677257865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      scarecrow_idling_0: -1184172118
+      scarecrow_idling_1: -1532603214
+      scarecrow_idling_10: -1143446968
+      scarecrow_idling_11: -774258292
+      scarecrow_idling_12: 412771997
+      scarecrow_idling_13: -551703214
+      scarecrow_idling_14: -1493383284
+      scarecrow_idling_15: 350616609
+      scarecrow_idling_16: -1019052234
+      scarecrow_idling_17: -544297699
+      scarecrow_idling_18: 297212415
+      scarecrow_idling_19: -502539622
+      scarecrow_idling_2: -2117348431
+      scarecrow_idling_20: 564372422
+      scarecrow_idling_21: -1949790558
+      scarecrow_idling_22: 114228413
+      scarecrow_idling_23: -1589115182
+      scarecrow_idling_24: -926861744
+      scarecrow_idling_25: -2090701569
+      scarecrow_idling_26: 1700884449
+      scarecrow_idling_27: -1531213337
+      scarecrow_idling_28: -337326366
+      scarecrow_idling_29: 2002147447
+      scarecrow_idling_3: 1747605565
+      scarecrow_idling_30: -2054448682
+      scarecrow_idling_31: -1706628161
+      scarecrow_idling_32: 782718022
+      scarecrow_idling_33: -689185872
+      scarecrow_idling_34: 130463247
+      scarecrow_idling_35: -1677257865
+      scarecrow_idling_4: -1196108773
+      scarecrow_idling_5: -989374194
+      scarecrow_idling_6: 1975867990
+      scarecrow_idling_7: 237494031
+      scarecrow_idling_8: 955534884
+      scarecrow_idling_9: -722774313
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

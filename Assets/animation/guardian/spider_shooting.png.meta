@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 99d65afc2e9c14948a8a1a19d0c7ccb1
+guid: a8e50bee61e63f047a83eed3d346a24a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grasshoper_jump_0
+      name: spider_shooting_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 1821
-        width: 259
-        height: 151
+        x: 150
+        y: 1822
+        width: 225
+        height: 268
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a68e82fb4ac3a4a499cacac27e34af90
-      internalID: -1138700596
+      spriteID: e716585e2f7108543be2d93c1bbe2012
+      internalID: -1299996422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_1
+      name: spider_shooting_1
       rect:
         serializedVersion: 2
-        x: 353
-        y: 1821
-        width: 259
-        height: 147
+        x: 673
+        y: 1822
+        width: 223
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c098d31e614c2904490913db4b37556c
-      internalID: -75644374
+      spriteID: 3f862636f93a3be4b9f6f93bffecff2c
+      internalID: -217359640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_2
+      name: spider_shooting_2
       rect:
         serializedVersion: 2
-        x: 674
-        y: 1821
-        width: 259
-        height: 147
+        x: 1194
+        y: 1822
+        width: 225
+        height: 277
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ddfad88d06849d499de438606df9e16
-      internalID: 1593618347
+      spriteID: 232b68703c8f217479c06f2d8ffc5748
+      internalID: -2072953662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_3
+      name: spider_shooting_3
       rect:
         serializedVersion: 2
-        x: 997
-        y: 1821
-        width: 259
-        height: 147
+        x: 1719
+        y: 1822
+        width: 225
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 364a14292916b484aa7a27ba3d7c81c6
-      internalID: -729317972
+      spriteID: 42db48c8e49dd0e4d84f2baf5d535b8c
+      internalID: 556567430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_4
+      name: spider_shooting_4
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 1821
-        width: 259
-        height: 144
+        x: 2242
+        y: 1822
+        width: 223
+        height: 283
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ca6cec50af872d49a89787ae0542c53
-      internalID: -1259085999
+      spriteID: 44f2e9ac7f5006b47b3f170c45084c72
+      internalID: 763966980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_5
+      name: spider_shooting_5
       rect:
         serializedVersion: 2
-        x: 1641
-        y: 1821
-        width: 259
-        height: 144
+        x: 2763
+        y: 1822
+        width: 225
+        height: 291
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b99e7ee2e34e22044aa4ae83ab727a9e
-      internalID: 1994722063
+      spriteID: 8e88f388fdab7a64bac37a87ad850d52
+      internalID: -923971366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_6
+      name: spider_shooting_6
       rect:
         serializedVersion: 2
-        x: 30
-        y: 1477
-        width: 259
-        height: 139
+        x: 150
+        y: 1470
+        width: 225
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddec4cac79a53c947839bc6d93c42a83
-      internalID: 1781665316
+      spriteID: ab1cec4baccc5134ca0dec01672fdfa0
+      internalID: 1724202514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_7
+      name: spider_shooting_7
       rect:
         serializedVersion: 2
-        x: 353
-        y: 1477
-        width: 259
-        height: 134
+        x: 673
+        y: 1470
+        width: 223
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfcaf7bcf300a124d8f16e33830b3ad9
-      internalID: -394804054
+      spriteID: 1b4603a2f5b24f145a3e5724442f514b
+      internalID: -2084690857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_8
+      name: spider_shooting_8
       rect:
         serializedVersion: 2
-        x: 674
-        y: 1477
-        width: 272
-        height: 128
+        x: 1194
+        y: 1470
+        width: 225
+        height: 297
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,20 +279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f07aa9c4b54275499bab5ed62451308
-      internalID: 1620301779
+      spriteID: cef57ba8e8c05ec4ba0cc268dadc8785
+      internalID: -316981312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_9
+      name: spider_shooting_9
       rect:
         serializedVersion: 2
-        x: 997
-        y: 1477
-        width: 275
-        height: 128
+        x: 1719
+        y: 1470
+        width: 225
+        height: 301
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,20 +300,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c13f6c4fec7b64242bca2640d96b9999
-      internalID: 1638753397
+      spriteID: 81e71b4702d787648ba887a6a20482d7
+      internalID: 69278634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_10
+      name: spider_shooting_10
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 1477
-        width: 276
-        height: 128
+        x: 2242
+        y: 1470
+        width: 223
+        height: 303
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,20 +321,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38b0f31382b0d1c44aeeed45cf2880d6
-      internalID: 720829127
+      spriteID: b72ff2804bd04d841af2531656cd569b
+      internalID: 463059635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_11
+      name: spider_shooting_11
       rect:
         serializedVersion: 2
-        x: 1641
-        y: 1477
-        width: 276
-        height: 128
+        x: 2763
+        y: 1470
+        width: 225
+        height: 304
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,20 +342,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 969a09f406d8aa94ebe8c3878202768f
-      internalID: -1077089429
+      spriteID: 5eff7bfbd7cf9f6449d1723444c21216
+      internalID: 257799068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_12
+      name: spider_shooting_12
       rect:
         serializedVersion: 2
-        x: 30
-        y: 1131
-        width: 277
-        height: 129
+        x: 150
+        y: 1114
+        width: 255
+        height: 302
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,20 +363,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e33fcdcddd84cb4f880f38d47c9011c
-      internalID: -1231715495
+      spriteID: c1f71714e04f090408f4c6c20c015616
+      internalID: 1314679794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_13
+      name: spider_shooting_13
       rect:
         serializedVersion: 2
-        x: 353
-        y: 1131
-        width: 272
-        height: 129
+        x: 673
+        y: 1114
+        width: 334
+        height: 297
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,20 +384,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 706f733b75bc72d419069c8de441c138
-      internalID: -3215641
+      spriteID: 91ab85181a289e9429d46782faea93b3
+      internalID: -78233247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_14
+      name: spider_shooting_14
       rect:
         serializedVersion: 2
-        x: 674
-        y: 1131
-        width: 269
-        height: 159
+        x: 1194
+        y: 1114
+        width: 377
+        height: 290
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -405,20 +405,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d124440adb5678f40b25c3f04fafe190
-      internalID: 1493701376
+      spriteID: fa5201374a89dde499993455100aa019
+      internalID: -1645870053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_15
+      name: spider_shooting_15
       rect:
         serializedVersion: 2
-        x: 997
-        y: 1143
-        width: 254
-        height: 196
+        x: 1719
+        y: 1114
+        width: 374
+        height: 277
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,20 +426,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5519639634da7264daa34adbbe477a9b
-      internalID: -1566079632
+      spriteID: 73f5ed79d59cd2844873809ff956703b
+      internalID: -613473459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_16
+      name: spider_shooting_16
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 1143
-        width: 247
-        height: 218
+        x: 2242
+        y: 1114
+        width: 374
+        height: 267
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,20 +447,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 640f22054e9a0f047bde49b61d0a141f
-      internalID: 179667584
+      spriteID: 48a18e08d2c7b6f4386c1b11fbc68ef0
+      internalID: -1908732751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_17
+      name: spider_shooting_17
       rect:
         serializedVersion: 2
-        x: 1641
-        y: 1143
-        width: 254
-        height: 238
+        x: 2763
+        y: 1114
+        width: 375
+        height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,20 +468,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75f39a6fca8cc554c929c0f04ee583ac
-      internalID: -1936922433
+      spriteID: c5f73d49a7de5f14e87882de6aa2ceaf
+      internalID: -1996974410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_18
+      name: spider_shooting_18
       rect:
         serializedVersion: 2
-        x: 22
-        y: 838
-        width: 280
-        height: 198
+        x: 150
+        y: 757
+        width: 374
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,20 +489,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5879040d810bade46a34685e88db9651
-      internalID: -261393073
+      spriteID: 470093922ec8c3947bd30b4a31cadec6
+      internalID: 306848566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_19
+      name: spider_shooting_19
       rect:
         serializedVersion: 2
-        x: 339
-        y: 856
-        width: 290
-        height: 180
+        x: 673
+        y: 757
+        width: 374
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,20 +510,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58c34b1b7c2d35b499037346e0fa3ec1
-      internalID: 241749733
+      spriteID: 43052585bbb1bbb41893d8d2ace02e00
+      internalID: -539177312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_20
+      name: spider_shooting_20
       rect:
         serializedVersion: 2
-        x: 648
-        y: 891
-        width: 295
-        height: 145
+        x: 1194
+        y: 757
+        width: 377
+        height: 247
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -531,20 +531,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d19a99c8fe2cc69429410097fed6ad11
-      internalID: -1211793421
+      spriteID: a3135b32f12af0d45a98a956b607d08e
+      internalID: -2032949673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_21
+      name: spider_shooting_21
       rect:
         serializedVersion: 2
-        x: 971
-        y: 902
-        width: 291
-        height: 134
+        x: 1719
+        y: 757
+        width: 374
+        height: 247
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -552,20 +552,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1357b9312abad947819978ac5c8589e
-      internalID: 1532006604
+      spriteID: 3071ae7a4da53cc49b25fc77cb7b616f
+      internalID: 1869519274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_22
+      name: spider_shooting_22
       rect:
         serializedVersion: 2
-        x: 1288
-        y: 907
-        width: 289
-        height: 129
+        x: 2242
+        y: 757
+        width: 374
+        height: 247
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -573,20 +573,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1704b2f4cb06a804ba8b87a040ba538a
-      internalID: -917261462
+      spriteID: 343b7666bf9f74e4e9be9b5419b987ba
+      internalID: 1766628315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_23
+      name: spider_shooting_23
       rect:
         serializedVersion: 2
-        x: 1611
-        y: 907
-        width: 284
-        height: 129
+        x: 2763
+        y: 757
+        width: 375
+        height: 242
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,20 +594,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 822aadeec59e8224d9b61f3e7f8e9b78
-      internalID: 273751154
+      spriteID: 4b96b9349fd100642a63223c6dac3501
+      internalID: -628932599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_24
+      name: spider_shooting_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 540
-        width: 284
-        height: 150
+        x: 150
+        y: 405
+        width: 374
+        height: 239
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,20 +615,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac562ded46ffb5647a096e087f65134f
-      internalID: 80336578
+      spriteID: d3fd0c5f615bc6b49ab51d1ebc17d7c2
+      internalID: 1022793641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_25
+      name: spider_shooting_25
       rect:
         serializedVersion: 2
-        x: 323
-        y: 512
-        width: 284
-        height: 177
+        x: 673
+        y: 405
+        width: 374
+        height: 239
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -636,20 +636,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91e2faa7f96d7bf4cb851d55a48add9b
-      internalID: 2040008732
+      spriteID: 6227db8cddd6c24428a7ca4214103278
+      internalID: 1774758992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_26
+      name: spider_shooting_26
       rect:
         serializedVersion: 2
-        x: 644
-        y: 484
-        width: 288
-        height: 183
+        x: 1194
+        y: 405
+        width: 377
+        height: 239
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -657,20 +657,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5f1581053a56a240aedb3b23b51475a
-      internalID: -1246161531
+      spriteID: 596552536ea78bd418aaaf1bee06aece
+      internalID: 1159917292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_27
+      name: spider_shooting_27
       rect:
         serializedVersion: 2
-        x: 972
-        y: 442
-        width: 284
-        height: 164
+        x: 1719
+        y: 405
+        width: 374
+        height: 239
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -678,20 +678,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d4fcc00a57f6f4429f615fbfbc22a0d
-      internalID: 1287905413
+      spriteID: c0619cbf33b70624aaa889b7190575f3
+      internalID: 1880533796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_28
+      name: spider_shooting_28
       rect:
         serializedVersion: 2
-        x: 1301
-        y: 442
-        width: 286
-        height: 134
+        x: 2242
+        y: 405
+        width: 374
+        height: 239
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -699,20 +699,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c61e776f17ef6d438afc67718016de7
-      internalID: 393427392
+      spriteID: 69d0b0a912e08174ab585f297ed9c56b
+      internalID: -938219630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_29
+      name: spider_shooting_29
       rect:
         serializedVersion: 2
-        x: 1641
-        y: 442
-        width: 276
-        height: 125
+        x: 2763
+        y: 405
+        width: 375
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -720,20 +720,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2917b61ae27bb84a9af8bc8ce16f132
-      internalID: 46219215
+      spriteID: 5375c8dedc753be4d82b5e8d35a0ff00
+      internalID: -2010841954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_30
+      name: spider_shooting_30
       rect:
         serializedVersion: 2
-        x: 34
-        y: 96
-        width: 261
-        height: 126
+        x: 150
+        y: 49
+        width: 374
+        height: 248
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -741,20 +741,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a29bd377b0c8fb4c91ce87786ae1adc
-      internalID: -665703285
+      spriteID: 9f4dcbfa59a16544189798c5bba99aab
+      internalID: 564767366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_31
+      name: spider_shooting_31
       rect:
         serializedVersion: 2
-        x: 353
-        y: 96
-        width: 259
-        height: 133
+        x: 673
+        y: 49
+        width: 374
+        height: 253
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -762,20 +762,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5a537b147dcc404092c5375494c6a6c
-      internalID: -789718350
+      spriteID: 0bb541a455f111e46980658cfdd0cc35
+      internalID: -1246200236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_32
+      name: spider_shooting_32
       rect:
         serializedVersion: 2
-        x: 674
-        y: 96
-        width: 254
-        height: 145
+        x: 1194
+        y: 49
+        width: 377
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -783,20 +783,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f44dbea0a68325e4ab39bfd363330fe1
-      internalID: 1528067477
+      spriteID: 5d3aec10cc90794478efb4d24eae43be
+      internalID: -598921214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_33
+      name: spider_shooting_33
       rect:
         serializedVersion: 2
-        x: 997
-        y: 96
-        width: 254
-        height: 148
+        x: 1719
+        y: 49
+        width: 374
+        height: 262
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -804,20 +804,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3e5598603289344a87899bacf7aa1ba
-      internalID: -1349348884
+      spriteID: 2342714f90b079e4db5f92e845254ad5
+      internalID: 275149958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_34
+      name: spider_shooting_34
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 96
-        width: 254
-        height: 152
+        x: 2242
+        y: 49
+        width: 374
+        height: 265
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -825,20 +825,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2b2625e6f8df6e4b9035df1eb4a62d6
-      internalID: 111313468
+      spriteID: b4f87116b68937f4483d6a5df843a4d6
+      internalID: -563706465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_35
+      name: spider_shooting_35
       rect:
         serializedVersion: 2
-        x: 1641
-        y: 96
-        width: 254
-        height: 153
+        x: 2763
+        y: 49
+        width: 375
+        height: 271
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -846,8 +846,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b2921f3b88ed1e47a02e4270fde7646
-      internalID: 2093113544
+      spriteID: 493d2d5ee8d344542a0ec04f227e1942
+      internalID: 1203747458
       vertices: []
       indices: 
       edges: []
@@ -863,42 +863,42 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      grasshoper_jump_0: -1138700596
-      grasshoper_jump_1: -75644374
-      grasshoper_jump_10: 720829127
-      grasshoper_jump_11: -1077089429
-      grasshoper_jump_12: -1231715495
-      grasshoper_jump_13: -3215641
-      grasshoper_jump_14: 1493701376
-      grasshoper_jump_15: -1566079632
-      grasshoper_jump_16: 179667584
-      grasshoper_jump_17: -1936922433
-      grasshoper_jump_18: -261393073
-      grasshoper_jump_19: 241749733
-      grasshoper_jump_2: 1593618347
-      grasshoper_jump_20: -1211793421
-      grasshoper_jump_21: 1532006604
-      grasshoper_jump_22: -917261462
-      grasshoper_jump_23: 273751154
-      grasshoper_jump_24: 80336578
-      grasshoper_jump_25: 2040008732
-      grasshoper_jump_26: -1246161531
-      grasshoper_jump_27: 1287905413
-      grasshoper_jump_28: 393427392
-      grasshoper_jump_29: 46219215
-      grasshoper_jump_3: -729317972
-      grasshoper_jump_30: -665703285
-      grasshoper_jump_31: -789718350
-      grasshoper_jump_32: 1528067477
-      grasshoper_jump_33: -1349348884
-      grasshoper_jump_34: 111313468
-      grasshoper_jump_35: 2093113544
-      grasshoper_jump_4: -1259085999
-      grasshoper_jump_5: 1994722063
-      grasshoper_jump_6: 1781665316
-      grasshoper_jump_7: -394804054
-      grasshoper_jump_8: 1620301779
-      grasshoper_jump_9: 1638753397
+      spider_shooting_0: -1299996422
+      spider_shooting_1: -217359640
+      spider_shooting_10: 463059635
+      spider_shooting_11: 257799068
+      spider_shooting_12: 1314679794
+      spider_shooting_13: -78233247
+      spider_shooting_14: -1645870053
+      spider_shooting_15: -613473459
+      spider_shooting_16: -1908732751
+      spider_shooting_17: -1996974410
+      spider_shooting_18: 306848566
+      spider_shooting_19: -539177312
+      spider_shooting_2: -2072953662
+      spider_shooting_20: -2032949673
+      spider_shooting_21: 1869519274
+      spider_shooting_22: 1766628315
+      spider_shooting_23: -628932599
+      spider_shooting_24: 1022793641
+      spider_shooting_25: 1774758992
+      spider_shooting_26: 1159917292
+      spider_shooting_27: 1880533796
+      spider_shooting_28: -938219630
+      spider_shooting_29: -2010841954
+      spider_shooting_3: 556567430
+      spider_shooting_30: 564767366
+      spider_shooting_31: -1246200236
+      spider_shooting_32: -598921214
+      spider_shooting_33: 275149958
+      spider_shooting_34: -563706465
+      spider_shooting_35: 1203747458
+      spider_shooting_4: 763966980
+      spider_shooting_5: -923971366
+      spider_shooting_6: 1724202514
+      spider_shooting_7: -2084690857
+      spider_shooting_8: -316981312
+      spider_shooting_9: 69278634
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

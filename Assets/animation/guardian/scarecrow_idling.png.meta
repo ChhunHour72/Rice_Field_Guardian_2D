@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 99d65afc2e9c14948a8a1a19d0c7ccb1
+guid: 6700da9097795b741a2640653e470d2c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grasshoper_jump_0
+      name: scarecrow_idling_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 1821
-        width: 259
-        height: 151
+        x: 4
+        y: 1306
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a68e82fb4ac3a4a499cacac27e34af90
-      internalID: -1138700596
+      spriteID: d7ce07fc6b38b65479526e72e85d1a82
+      internalID: -1184172118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_1
+      name: scarecrow_idling_1
       rect:
         serializedVersion: 2
-        x: 353
-        y: 1821
-        width: 259
-        height: 147
+        x: 175
+        y: 1306
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c098d31e614c2904490913db4b37556c
-      internalID: -75644374
+      spriteID: 962ef735cf947b44caa09a647def26ce
+      internalID: -1532603214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_2
+      name: scarecrow_idling_2
       rect:
         serializedVersion: 2
-        x: 674
-        y: 1821
-        width: 259
-        height: 147
+        x: 346
+        y: 1306
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ddfad88d06849d499de438606df9e16
-      internalID: 1593618347
+      spriteID: 9818dc6d7a7b1c243a3663b844e12e5f
+      internalID: -2117348431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_3
+      name: scarecrow_idling_3
       rect:
         serializedVersion: 2
-        x: 997
-        y: 1821
-        width: 259
-        height: 147
+        x: 517
+        y: 1306
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 364a14292916b484aa7a27ba3d7c81c6
-      internalID: -729317972
+      spriteID: 307a599f49448804cbe5e3ad2118660c
+      internalID: 1747605565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_4
+      name: scarecrow_idling_4
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 1821
-        width: 259
-        height: 144
+        x: 688
+        y: 1306
+        width: 155
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +195,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ca6cec50af872d49a89787ae0542c53
-      internalID: -1259085999
+      spriteID: d19a3a30691568f4dbe56f39d1b7f8d1
+      internalID: -1196108773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_5
+      name: scarecrow_idling_5
       rect:
         serializedVersion: 2
-        x: 1641
-        y: 1821
-        width: 259
-        height: 144
+        x: 859
+        y: 1306
+        width: 155
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b99e7ee2e34e22044aa4ae83ab727a9e
-      internalID: 1994722063
+      spriteID: 58a5b519e3244bf4d9240d9b89fe2113
+      internalID: -989374194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_6
+      name: scarecrow_idling_6
       rect:
         serializedVersion: 2
-        x: 30
-        y: 1477
-        width: 259
-        height: 139
+        x: 7
+        y: 1045
+        width: 152
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddec4cac79a53c947839bc6d93c42a83
-      internalID: 1781665316
+      spriteID: 044416c5b8f386841b30b59103a038c6
+      internalID: 1975867990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_7
+      name: scarecrow_idling_7
       rect:
         serializedVersion: 2
-        x: 353
-        y: 1477
-        width: 259
-        height: 134
+        x: 178
+        y: 1045
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfcaf7bcf300a124d8f16e33830b3ad9
-      internalID: -394804054
+      spriteID: 626f4c3b4237dd04399f1f7521edb4d6
+      internalID: 237494031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_8
+      name: scarecrow_idling_8
       rect:
         serializedVersion: 2
-        x: 674
-        y: 1477
-        width: 272
-        height: 128
+        x: 349
+        y: 1045
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,20 +279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f07aa9c4b54275499bab5ed62451308
-      internalID: 1620301779
+      spriteID: 9724d7c51b3b44944872a71a4a62f7af
+      internalID: 955534884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_9
+      name: scarecrow_idling_9
       rect:
         serializedVersion: 2
-        x: 997
-        y: 1477
-        width: 275
-        height: 128
+        x: 523
+        y: 1045
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,20 +300,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c13f6c4fec7b64242bca2640d96b9999
-      internalID: 1638753397
+      spriteID: 87cac520ad745a549b19cfab057a701a
+      internalID: -722774313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_10
+      name: scarecrow_idling_10
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 1477
-        width: 276
-        height: 128
+        x: 694
+        y: 1045
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,20 +321,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38b0f31382b0d1c44aeeed45cf2880d6
-      internalID: 720829127
+      spriteID: a8aa0d16b1ec6994cb1b0867dee638d5
+      internalID: -1143446968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_11
+      name: scarecrow_idling_11
       rect:
         serializedVersion: 2
-        x: 1641
-        y: 1477
-        width: 276
-        height: 128
+        x: 865
+        y: 1045
+        width: 156
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,20 +342,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 969a09f406d8aa94ebe8c3878202768f
-      internalID: -1077089429
+      spriteID: fcb626a681b7c254c9b69fd7b6f18696
+      internalID: -774258292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_12
+      name: scarecrow_idling_12
       rect:
         serializedVersion: 2
-        x: 30
-        y: 1131
-        width: 277
-        height: 129
+        x: 13
+        y: 784
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,20 +363,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e33fcdcddd84cb4f880f38d47c9011c
-      internalID: -1231715495
+      spriteID: 70652b9be9e79f142b413458a08e1e48
+      internalID: 412771997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_13
+      name: scarecrow_idling_13
       rect:
         serializedVersion: 2
-        x: 353
-        y: 1131
-        width: 272
-        height: 129
+        x: 184
+        y: 784
+        width: 156
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,20 +384,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 706f733b75bc72d419069c8de441c138
-      internalID: -3215641
+      spriteID: 86b9a3d4a2374b44c8501a3aca88464f
+      internalID: -551703214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_14
+      name: scarecrow_idling_14
       rect:
         serializedVersion: 2
-        x: 674
-        y: 1131
-        width: 269
-        height: 159
+        x: 358
+        y: 784
+        width: 153
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -405,20 +405,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d124440adb5678f40b25c3f04fafe190
-      internalID: 1493701376
+      spriteID: cbae9892e4818b14f8afbe1dd519eaeb
+      internalID: -1493383284
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_15
+      name: scarecrow_idling_15
       rect:
         serializedVersion: 2
-        x: 997
-        y: 1143
-        width: 254
-        height: 196
+        x: 529
+        y: 784
+        width: 153
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,20 +426,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5519639634da7264daa34adbbe477a9b
-      internalID: -1566079632
+      spriteID: 8a1c430d8a27be54ebde3ee07a3c0a72
+      internalID: 350616609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_16
+      name: scarecrow_idling_16
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 1143
-        width: 247
-        height: 218
+        x: 700
+        y: 784
+        width: 153
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,20 +447,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 640f22054e9a0f047bde49b61d0a141f
-      internalID: 179667584
+      spriteID: 3966dd919ddc7944c93053da47695f79
+      internalID: -1019052234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_17
+      name: scarecrow_idling_17
       rect:
         serializedVersion: 2
-        x: 1641
-        y: 1143
-        width: 254
-        height: 238
+        x: 874
+        y: 784
+        width: 151
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,20 +468,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75f39a6fca8cc554c929c0f04ee583ac
-      internalID: -1936922433
+      spriteID: e7a38aef4c931844997ca5e8ad12c4d9
+      internalID: -544297699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_18
+      name: scarecrow_idling_18
       rect:
         serializedVersion: 2
-        x: 22
-        y: 838
-        width: 280
-        height: 198
+        x: 19
+        y: 523
+        width: 150
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,20 +489,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5879040d810bade46a34685e88db9651
-      internalID: -261393073
+      spriteID: 0fc40e4d85729cd4c84436a4b0e69f71
+      internalID: 297212415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_19
+      name: scarecrow_idling_19
       rect:
         serializedVersion: 2
-        x: 339
-        y: 856
-        width: 290
-        height: 180
+        x: 190
+        y: 523
+        width: 150
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,20 +510,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58c34b1b7c2d35b499037346e0fa3ec1
-      internalID: 241749733
+      spriteID: 8d16e4014083ee945a7fbd61f4eef7d0
+      internalID: -502539622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_20
+      name: scarecrow_idling_20
       rect:
         serializedVersion: 2
-        x: 648
-        y: 891
-        width: 295
-        height: 145
+        x: 361
+        y: 523
+        width: 150
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -531,20 +531,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d19a99c8fe2cc69429410097fed6ad11
-      internalID: -1211793421
+      spriteID: 07a5da6eeb9241f42ad58f0d2c616776
+      internalID: 564372422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_21
+      name: scarecrow_idling_21
       rect:
         serializedVersion: 2
-        x: 971
-        y: 902
-        width: 291
-        height: 134
+        x: 532
+        y: 523
+        width: 150
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -552,20 +552,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1357b9312abad947819978ac5c8589e
-      internalID: 1532006604
+      spriteID: 7737f0800cc03c0429cd82fdb1f737ac
+      internalID: -1949790558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_22
+      name: scarecrow_idling_22
       rect:
         serializedVersion: 2
-        x: 1288
-        y: 907
-        width: 289
-        height: 129
+        x: 703
+        y: 523
+        width: 150
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -573,20 +573,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1704b2f4cb06a804ba8b87a040ba538a
-      internalID: -917261462
+      spriteID: cab28dcf7a257c04bb666f609ad7ec8e
+      internalID: 114228413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_23
+      name: scarecrow_idling_23
       rect:
         serializedVersion: 2
-        x: 1611
-        y: 907
-        width: 284
-        height: 129
+        x: 871
+        y: 523
+        width: 153
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,20 +594,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 822aadeec59e8224d9b61f3e7f8e9b78
-      internalID: 273751154
+      spriteID: d3744cac7b8ebde4ebd3efefa1a28490
+      internalID: -1589115182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_24
+      name: scarecrow_idling_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 540
-        width: 284
-        height: 150
+        x: 16
+        y: 262
+        width: 153
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -615,20 +615,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac562ded46ffb5647a096e087f65134f
-      internalID: 80336578
+      spriteID: 20386580c764035488c8512ae39a0c7d
+      internalID: -926861744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_25
+      name: scarecrow_idling_25
       rect:
         serializedVersion: 2
-        x: 323
-        y: 512
-        width: 284
-        height: 177
+        x: 187
+        y: 262
+        width: 153
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -636,20 +636,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91e2faa7f96d7bf4cb851d55a48add9b
-      internalID: 2040008732
+      spriteID: 37ea301435bdd38479a14b8083b9d4c1
+      internalID: -2090701569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_26
+      name: scarecrow_idling_26
       rect:
         serializedVersion: 2
-        x: 644
-        y: 484
-        width: 288
-        height: 183
+        x: 355
+        y: 262
+        width: 156
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -657,20 +657,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5f1581053a56a240aedb3b23b51475a
-      internalID: -1246161531
+      spriteID: 75747d12ab6783644ad8d867486960de
+      internalID: 1700884449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_27
+      name: scarecrow_idling_27
       rect:
         serializedVersion: 2
-        x: 972
-        y: 442
-        width: 284
-        height: 164
+        x: 526
+        y: 262
+        width: 153
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -678,20 +678,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d4fcc00a57f6f4429f615fbfbc22a0d
-      internalID: 1287905413
+      spriteID: 1c9b74a50d0c04b4198cc349f2f302ad
+      internalID: -1531213337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_28
+      name: scarecrow_idling_28
       rect:
         serializedVersion: 2
-        x: 1301
-        y: 442
-        width: 286
-        height: 134
+        x: 694
+        y: 262
+        width: 156
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -699,20 +699,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c61e776f17ef6d438afc67718016de7
-      internalID: 393427392
+      spriteID: 178da99d01e29194dae689df6f1990cb
+      internalID: -337326366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_29
+      name: scarecrow_idling_29
       rect:
         serializedVersion: 2
-        x: 1641
-        y: 442
-        width: 276
-        height: 125
+        x: 865
+        y: 262
+        width: 156
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -720,20 +720,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2917b61ae27bb84a9af8bc8ce16f132
-      internalID: 46219215
+      spriteID: 454a694ccbee87c4c8195bfb37c8a6fe
+      internalID: 2002147447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_30
+      name: scarecrow_idling_30
       rect:
         serializedVersion: 2
-        x: 34
-        y: 96
-        width: 261
-        height: 126
+        x: 7
+        y: 1
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -741,20 +741,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a29bd377b0c8fb4c91ce87786ae1adc
-      internalID: -665703285
+      spriteID: 0aefcba6474b6af449b64df464c9497e
+      internalID: -2054448682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_31
+      name: scarecrow_idling_31
       rect:
         serializedVersion: 2
-        x: 353
-        y: 96
-        width: 259
-        height: 133
+        x: 178
+        y: 1
+        width: 152
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -762,20 +762,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5a537b147dcc404092c5375494c6a6c
-      internalID: -789718350
+      spriteID: b8bf6f551c24c0d48a40b77a9720cb18
+      internalID: -1706628161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_32
+      name: scarecrow_idling_32
       rect:
         serializedVersion: 2
-        x: 674
-        y: 96
-        width: 254
-        height: 145
+        x: 349
+        y: 1
+        width: 152
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -783,20 +783,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f44dbea0a68325e4ab39bfd363330fe1
-      internalID: 1528067477
+      spriteID: 53666978db31e184da674ce0b34d3317
+      internalID: 782718022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_33
+      name: scarecrow_idling_33
       rect:
         serializedVersion: 2
-        x: 997
-        y: 96
-        width: 254
-        height: 148
+        x: 517
+        y: 1
+        width: 155
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -804,20 +804,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3e5598603289344a87899bacf7aa1ba
-      internalID: -1349348884
+      spriteID: 1dfc2bf9e97928a4fa70300f855aae53
+      internalID: -689185872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_34
+      name: scarecrow_idling_34
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 96
-        width: 254
-        height: 152
+        x: 688
+        y: 1
+        width: 155
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -825,20 +825,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2b2625e6f8df6e4b9035df1eb4a62d6
-      internalID: 111313468
+      spriteID: 78e35e07e492298468f3fd334ae9c98c
+      internalID: 130463247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: grasshoper_jump_35
+      name: scarecrow_idling_35
       rect:
         serializedVersion: 2
-        x: 1641
-        y: 96
-        width: 254
-        height: 153
+        x: 859
+        y: 1
+        width: 154
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -846,8 +846,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b2921f3b88ed1e47a02e4270fde7646
-      internalID: 2093113544
+      spriteID: 54af4f2b426d2ea4aa4fc95c8b512be8
+      internalID: -1677257865
       vertices: []
       indices: 
       edges: []
@@ -863,42 +863,42 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      grasshoper_jump_0: -1138700596
-      grasshoper_jump_1: -75644374
-      grasshoper_jump_10: 720829127
-      grasshoper_jump_11: -1077089429
-      grasshoper_jump_12: -1231715495
-      grasshoper_jump_13: -3215641
-      grasshoper_jump_14: 1493701376
-      grasshoper_jump_15: -1566079632
-      grasshoper_jump_16: 179667584
-      grasshoper_jump_17: -1936922433
-      grasshoper_jump_18: -261393073
-      grasshoper_jump_19: 241749733
-      grasshoper_jump_2: 1593618347
-      grasshoper_jump_20: -1211793421
-      grasshoper_jump_21: 1532006604
-      grasshoper_jump_22: -917261462
-      grasshoper_jump_23: 273751154
-      grasshoper_jump_24: 80336578
-      grasshoper_jump_25: 2040008732
-      grasshoper_jump_26: -1246161531
-      grasshoper_jump_27: 1287905413
-      grasshoper_jump_28: 393427392
-      grasshoper_jump_29: 46219215
-      grasshoper_jump_3: -729317972
-      grasshoper_jump_30: -665703285
-      grasshoper_jump_31: -789718350
-      grasshoper_jump_32: 1528067477
-      grasshoper_jump_33: -1349348884
-      grasshoper_jump_34: 111313468
-      grasshoper_jump_35: 2093113544
-      grasshoper_jump_4: -1259085999
-      grasshoper_jump_5: 1994722063
-      grasshoper_jump_6: 1781665316
-      grasshoper_jump_7: -394804054
-      grasshoper_jump_8: 1620301779
-      grasshoper_jump_9: 1638753397
+      scarecrow_idling_0: -1184172118
+      scarecrow_idling_1: -1532603214
+      scarecrow_idling_10: -1143446968
+      scarecrow_idling_11: -774258292
+      scarecrow_idling_12: 412771997
+      scarecrow_idling_13: -551703214
+      scarecrow_idling_14: -1493383284
+      scarecrow_idling_15: 350616609
+      scarecrow_idling_16: -1019052234
+      scarecrow_idling_17: -544297699
+      scarecrow_idling_18: 297212415
+      scarecrow_idling_19: -502539622
+      scarecrow_idling_2: -2117348431
+      scarecrow_idling_20: 564372422
+      scarecrow_idling_21: -1949790558
+      scarecrow_idling_22: 114228413
+      scarecrow_idling_23: -1589115182
+      scarecrow_idling_24: -926861744
+      scarecrow_idling_25: -2090701569
+      scarecrow_idling_26: 1700884449
+      scarecrow_idling_27: -1531213337
+      scarecrow_idling_28: -337326366
+      scarecrow_idling_29: 2002147447
+      scarecrow_idling_3: 1747605565
+      scarecrow_idling_30: -2054448682
+      scarecrow_idling_31: -1706628161
+      scarecrow_idling_32: 782718022
+      scarecrow_idling_33: -689185872
+      scarecrow_idling_34: 130463247
+      scarecrow_idling_35: -1677257865
+      scarecrow_idling_4: -1196108773
+      scarecrow_idling_5: -989374194
+      scarecrow_idling_6: 1975867990
+      scarecrow_idling_7: 237494031
+      scarecrow_idling_8: 955534884
+      scarecrow_idling_9: -722774313
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -56,6 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Rice_Field_Guardian.sln",
+    "dotnet.defaultSolution": "Rice_Field_Guardian_2D.sln",
     "git.ignoreLimitWarning": true
 }

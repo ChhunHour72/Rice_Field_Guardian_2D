@@ -18,15 +18,27 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene_easy.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/GameScene_hard.unity
-    guid: 78f1fa9ca0004435ea070a08e12734cd
-  - enabled: 1
     path: Assets/Scenes/GameScene_medium.unity
     guid: b27eada55346d4376b6e72d9ef8c71b3
   - enabled: 1
-    path: Assets/Scenes/WinScene.unity
+    path: Assets/Scenes/GameScene_hard.unity
+    guid: 78f1fa9ca0004435ea070a08e12734cd
+  - enabled: 1
+    path: Assets/Scenes/WinScene_1.unity
     guid: c1684b8cc75fd42a98ff1b5ae208147e
   - enabled: 1
-    path: Assets/Scenes/LooseScene.unity
+    path: Assets/Scenes/WinScene_2.unity
+    guid: 1e690f69b8eea439b9fe921cb596bc1b
+  - enabled: 1
+    path: Assets/Scenes/WinScene_3.unity
+    guid: d887b86e68cc94e3e9df2d706b586082
+  - enabled: 1
+    path: Assets/Scenes/LooseScene_1.unity
     guid: 04d4521de5e9f4d8297b5089c22b37b2
+  - enabled: 1
+    path: Assets/Scenes/LooseScene_2.unity
+    guid: b07af9849fc6943ea9efb00be1acd169
+  - enabled: 1
+    path: Assets/Scenes/LooseScene_3.unity
+    guid: 9103d7a7088b9452cbff15547ae267d9
   m_configObjects: {}

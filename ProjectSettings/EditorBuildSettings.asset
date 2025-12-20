@@ -6,23 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GameScene_easy.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/HomeScene.unity
+    guid: cd4badb9a20ea40c981ffccf5b0777de
+  - enabled: 1
+    path: Assets/Scenes/Setting.unity
+    guid: 3b3c721649057419db984916fdd782fd
   - enabled: 1
     path: Assets/Scenes/Difficulty.unity
     guid: afe1ea6f2cfdf4c55bb2b5849d9aa7af
+  - enabled: 1
+    path: Assets/Scenes/GameScene_easy.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/GameScene_hard.unity
     guid: 78f1fa9ca0004435ea070a08e12734cd
   - enabled: 1
     path: Assets/Scenes/GameScene_medium.unity
     guid: b27eada55346d4376b6e72d9ef8c71b3
-  - enabled: 1
-    path: Assets/Scenes/HomeScene.unity
-    guid: cd4badb9a20ea40c981ffccf5b0777de
-  - enabled: 1
-    path: Assets/Scenes/Setting.unity
-    guid: 3b3c721649057419db984916fdd782fd
   - enabled: 1
     path: Assets/Scenes/WinScene.unity
     guid: c1684b8cc75fd42a98ff1b5ae208147e

@@ -8,6 +8,8 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private AudioClip generalBGM;
     [SerializeField] private AudioClip gameBGM;
+    [SerializeField] private AudioClip winBGM;      // NEW: For WinScene_*
+    [SerializeField] private AudioClip loseBGM;     // NEW: For LooseScene_*
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioMixer musicMixer;
 
@@ -75,14 +77,33 @@ public class AudioManager : MonoBehaviour
     }
 
     // Updated helper: switches BGM based on current scene
-    // Uses gameBGM for GameScene_easy, GameScene_medium, GameScene_hard (and any future GameScene_*)
-    // Uses generalBGM for all other scenes
+    // - GameScene_* → gameBGM
+    // - WinScene_* → winBGM
+    // - LooseScene_* → loseBGM
+    // - All others → generalBGM
     private void SwitchToCurrentSceneBGM()
     {
         if (audioSource == null) return;
 
         string sceneName = SceneManager.GetActiveScene().name;
-        AudioClip targetClip = sceneName.StartsWith("GameScene_") ? gameBGM : generalBGM;
+        AudioClip targetClip;
+
+        if (sceneName.StartsWith("GameScene_"))
+        {
+            targetClip = gameBGM;
+        }
+        else if (sceneName.StartsWith("WinScene_"))
+        {
+            targetClip = winBGM;
+        }
+        else if (sceneName.StartsWith("LooseScene_"))
+        {
+            targetClip = loseBGM;
+        }
+        else
+        {
+            targetClip = generalBGM;
+        }
 
         if (audioSource.clip != targetClip)
         {

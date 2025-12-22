@@ -955,7 +955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScale: 1
-  animationDuration: 0.1
+  animationDuration: 0.5
   easeCurve:
     serializedVersion: 2
     m_Curve:

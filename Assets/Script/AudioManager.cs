@@ -74,12 +74,15 @@ public class AudioManager : MonoBehaviour
         ApplyMusicState();
     }
 
-    // New helper: switches BGM based on current scene
+    // Updated helper: switches BGM based on current scene
+    // Uses gameBGM for GameScene_easy, GameScene_medium, GameScene_hard (and any future GameScene_*)
+    // Uses generalBGM for all other scenes
     private void SwitchToCurrentSceneBGM()
     {
         if (audioSource == null) return;
 
-        AudioClip targetClip = (SceneManager.GetActiveScene().name == "Game") ? gameBGM : generalBGM;
+        string sceneName = SceneManager.GetActiveScene().name;
+        AudioClip targetClip = sceneName.StartsWith("GameScene_") ? gameBGM : generalBGM;
 
         if (audioSource.clip != targetClip)
         {
@@ -115,7 +118,6 @@ public class AudioManager : MonoBehaviour
 
         isMusicOn = on;
         ApplyMusicState();
-
         PlayerPrefs.SetInt(MusicPrefKey, isMusicOn ? 1 : 0);
         PlayerPrefs.Save();
     }

@@ -9,7 +9,6 @@ public class DefenderSlot : MonoBehaviour
     public Sprite DefenderSprite;
     public GameObject DefenderObject;
     public Image icon;
-    public string label;
     public TextMeshProUGUI labelText;
 
     private void OnValidate()
@@ -20,7 +19,6 @@ public class DefenderSlot : MonoBehaviour
         {
             icon.enabled = true;
             icon.sprite = DefenderSprite;
-            labelText.text = label;
         } else
         {
             icon.enabled = false;

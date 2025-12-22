@@ -10,12 +10,27 @@ public class ConveyorSpawner : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating("SpawnEnermy", 2, 5);
+        StartCoroutine(SpawnLoop());
     }
 
-    void SpawnEnermy()
+    IEnumerator SpawnLoop()
+    {
+        while (true)
+        {
+            float delay = Random.Range(10f, 25f);
+            yield return new WaitForSeconds(delay);
+            SpawnDefender();
+        }
+    }
+
+    void SpawnDefender()
     {
         int r = Random.Range(0, spawnpoints.Length);
-        GameObject myEnermy = Instantiate(guardian, spawnpoints[r].position, Quaternion.identity);
+        GameObject myDefender = Instantiate(
+            guardian,
+            spawnpoints[r].position,
+             Quaternion.identity,
+            spawnpoints[r]  
+        );
     }
 }

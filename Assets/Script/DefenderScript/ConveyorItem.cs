@@ -1,11 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class ConveyorItem : MonoBehaviour
+public class ConveyorItem : MonoBehaviour, IDragHandler
 {
     public float speed = 1f;
     public float DestroyInSecond = 10f;
+    public GameObject object_drag;
+    public GameObject object_game;
+
+    
+    public void OnDrag(PointerEventData eventData)
+    {
+        
+    }
+
     // Update is called once per frame
     private void Start()
     {

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class ConveyorSpawner : MonoBehaviour
 {
-    public Transform[] spawnpoints;
+     public Transform[] spawnpoints;
 
-    public GameObject guardian;
+    // Drag your 3 guardian prefabs here
+    public GameObject[] guardians;
 
-    private void Start()
+    void Start()
     {
         StartCoroutine(SpawnLoop());
     }
@@ -25,12 +26,14 @@ public class ConveyorSpawner : MonoBehaviour
 
     void SpawnDefender()
     {
-        int r = Random.Range(0, spawnpoints.Length);
-        GameObject myDefender = Instantiate(
-            guardian,
-            spawnpoints[r].position,
-             Quaternion.identity,
-            spawnpoints[r]  
+        int spawnIndex = Random.Range(0, spawnpoints.Length);
+        int guardianIndex = Random.Range(0, guardians.Length);
+
+        Instantiate(
+            guardians[guardianIndex],
+            spawnpoints[spawnIndex].position,
+            Quaternion.identity,
+            spawnpoints[spawnIndex]
         );
-    }
+    }   
 }

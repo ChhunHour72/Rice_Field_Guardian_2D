@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 83530977144865605}
   - component: {fileID: 6980316909801914355}
   - component: {fileID: 4836050844529808787}
-  - component: {fileID: 5162235374400230424}
-  m_Layer: 0
+  - component: {fileID: 6828595325343227960}
+  - component: {fileID: 6816722531590892814}
+  m_Layer: 7
   m_Name: Defender_Container_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +54,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5075911399289107643}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -76,7 +77,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!61 &5162235374400230424
+--- !u!114 &6828595325343227960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5075911399289107643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 158e69ea8340c48439f0eb0bd311ea36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 0
+  backgroundImage: {fileID: 4836050844529808787}
+  gameManager: {fileID: 0}
+--- !u!61 &6816722531590892814
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,5 +135,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 100, y: 60}
+  m_Size: {x: 100, y: 100}
   m_EdgeRadius: 0

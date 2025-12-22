@@ -89,4 +89,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  DestroyInSecond: 20
+  object_drag: {fileID: 0}
+  object_game: {fileID: 0}
+  canvas: {fileID: 0}

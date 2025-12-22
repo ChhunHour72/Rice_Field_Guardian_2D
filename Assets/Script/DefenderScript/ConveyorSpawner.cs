@@ -18,7 +18,7 @@ public class ConveyorSpawner : MonoBehaviour
     {
         while (true)
         {
-            float delay = Random.Range(10f, 25f);
+            float delay = Random.Range(1f, 5f);
             yield return new WaitForSeconds(delay);
             SpawnDefender();
         }

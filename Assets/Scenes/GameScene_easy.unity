@@ -4775,8 +4775,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 628, y: 469}
-  m_SizeDelta: {x: 1148.915, y: 225.8815}
+  m_AnchoredPosition: {x: 686.09546, y: 469}
+  m_SizeDelta: {x: 1265.106, y: 225.8815}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1556598990
 MonoBehaviour:
@@ -5254,7 +5254,7 @@ Transform:
   m_GameObject: {fileID: 1750391120}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1109, y: -4, z: -2.5487545}
+  m_LocalPosition: {x: 307, y: -60, z: -2.5487545}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5655,7 +5655,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnpoints:
   - {fileID: 1750391121}
-  guardian: {fileID: 4144080042050176545, guid: 3c0a02957e6eda34d8fd9f7baac48bfa, type: 3}
+  guardians:
+  - {fileID: 7542603829958438248, guid: e36aeed77a08f0645860f67a6ec56bb6, type: 3}
+  - {fileID: 1957160667785397264, guid: 9f12196091c71094ea954414c8b0a525, type: 3}
+  - {fileID: 1460403814437081147, guid: 1cb10ce97d28a0a478ce053c31025b0c, type: 3}
 --- !u!1001 &1938356780
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,19 +1,43 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using UnityEngine.UI;  // Needed for Image
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
+    // BGM Clips
     [SerializeField] private AudioClip generalBGM;
     [SerializeField] private AudioClip gameBGM;
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioMixer musicMixer;
+    [SerializeField] private AudioClip winBGM;
+    [SerializeField] private AudioClip loseBGM;
+
+    // UI Click Sound
+    [SerializeField] private AudioClip buttonClickClip;
+
+    // AudioSources
+    [SerializeField] private AudioSource musicSource;
+    [SerializeField] private AudioSource sfxSource;
+
+    // Mixer
+    [SerializeField] private AudioMixer audioMixer;
+
+    // Icon references (assign in Inspector from Settings scene)
+    [Header("Settings UI Icons (Optional - Assign if you have Settings scene)")]
+    [SerializeField] private Image musicIconImage;
+    [SerializeField] private Image sfxIconImage;
+
+    [SerializeField] private Sprite iconOnSprite;
+    [SerializeField] private Sprite iconOffSprite;
 
     private bool isMusicOn = true;
+    private bool isSFXOn = true;
+
     private const string MusicPrefKey = "MusicOn";
+    private const string SFXPrefKey = "SFXOn";
     private const string ExposedMusicVolumeParam = "MusicVolume";
+    private const string ExposedSFXVolumeParam = "SFXVolume";
 
     private void Awake()
     {
@@ -22,19 +46,14 @@ public class AudioManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            // Load saved preference (default: on)
             isMusicOn = PlayerPrefs.GetInt(MusicPrefKey, 1) == 1;
+            isSFXOn = PlayerPrefs.GetInt(SFXPrefKey, 1) == 1;
 
-            SetupAudioSource();
-
-            // Subscribe to scene loads
+            SetupAudioSources();
             SceneManager.sceneLoaded += OnSceneLoaded;
 
-            // Apply mute state immediately (mixer should be ready now)
             ApplyMusicState();
-
-            // Now handle the initial scene's BGM (clip switch + play if needed)
-            // We do this AFTER applying mute state
+            ApplySFXState();
             SwitchToCurrentSceneBGM();
         }
         else
@@ -48,87 +67,129 @@ public class AudioManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    private void SetupAudioSource()
+    private void SetupAudioSources()
     {
-        if (audioSource == null)
+        if (musicSource == null || sfxSource == null)
         {
-            Debug.LogError("AudioSource not assigned in AudioManager!");
+            Debug.LogError("AudioSources not assigned!");
             return;
         }
 
-        audioSource.loop = true;
-        audioSource.spatialBlend = 0f;
-        audioSource.pitch = 1f;
-
-        // Do NOT play here — we'll play in SwitchToCurrentSceneBGM() after mute is applied
+        musicSource.loop = true;
+        musicSource.playOnAwake = false;
+        sfxSource.playOnAwake = false;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (audioSource == null) return;
-
-        // Only switch clip and play — mute state is already applied globally
         SwitchToCurrentSceneBGM();
-
-        // Re-apply mute state in case mixer was reset or something (defensive)
         ApplyMusicState();
+        ApplySFXState();
+
+        // Refresh icons when entering Settings scene
+        if (scene.name.Contains("Settings") || scene.name.Contains("Setting"))
+        {
+            UpdateAllIcons();
+        }
     }
 
-    // New helper: switches BGM based on current scene
     private void SwitchToCurrentSceneBGM()
     {
-        if (audioSource == null) return;
+        if (musicSource == null) return;
 
-        AudioClip targetClip = (SceneManager.GetActiveScene().name == "Game") ? gameBGM : generalBGM;
+        string sceneName = SceneManager.GetActiveScene().name;
+        AudioClip targetClip = sceneName.StartsWith("GameScene_") ? gameBGM :
+                               sceneName.StartsWith("WinScene_") ? winBGM :
+                               sceneName.StartsWith("LooseScene_") ? loseBGM :
+                               generalBGM;
 
-        if (audioSource.clip != targetClip)
+        if (musicSource.clip != targetClip || !musicSource.isPlaying)
         {
-            audioSource.clip = targetClip;
+            musicSource.clip = targetClip;
+            musicSource.Play();
         }
+    }
 
-        if (!audioSource.isPlaying)
+    public void PlayButtonClickSound()
+    {
+        if (sfxSource != null && buttonClickClip != null)
         {
-            audioSource.Play();
+            sfxSource.PlayOneShot(buttonClickClip);
         }
     }
 
-    // =============== BUTTON METHODS ===============
-    public static void StaticMuteMusic()
+    public bool IsMusicOn() => isMusicOn;
+    public bool IsSFXOn() => isSFXOn;
+
+    // Initialize state from PlayerPrefs
+    public void InitialState()
     {
-        if (Instance != null) Instance.SetMusicOn(false);
+        isMusicOn = PlayerPrefs.GetInt(MusicPrefKey, 1) == 1;
+        isSFXOn = PlayerPrefs.GetInt(SFXPrefKey, 1) == 1;
+
+        ApplyMusicState();
+        ApplySFXState();
+        UpdateAllIcons();
     }
 
-    public static void StaticUnmuteMusic()
-    {
-        if (Instance != null) Instance.SetMusicOn(true);
-    }
+    // Static methods for buttons
+    public static void StaticMuteMusic() => Instance?.SetMusicOn(false);
+    public static void StaticUnmuteMusic() => Instance?.SetMusicOn(true);
+    public static void StaticMuteSFX() => Instance?.SetSFXOn(false);
+    public static void StaticUnmuteSFX() => Instance?.SetSFXOn(true);
 
-    public static void StaticToggleMusic()
-    {
-        if (Instance != null) Instance.SetMusicOn(!Instance.isMusicOn);
-    }
-
-    // =============== INTERNAL LOGIC ===============
     private void SetMusicOn(bool on)
     {
         if (isMusicOn == on) return;
-
         isMusicOn = on;
         ApplyMusicState();
-
         PlayerPrefs.SetInt(MusicPrefKey, isMusicOn ? 1 : 0);
         PlayerPrefs.Save();
+        UpdateMusicIcon();
+    }
+
+    private void SetSFXOn(bool on)
+    {
+        if (isSFXOn == on) return;
+        isSFXOn = on;
+        ApplySFXState();
+        PlayerPrefs.SetInt(SFXPrefKey, isSFXOn ? 1 : 0);
+        PlayerPrefs.Save();
+        UpdateSFXIcon();
     }
 
     private void ApplyMusicState()
     {
-        if (musicMixer == null)
-        {
-            Debug.LogWarning("Music Mixer not assigned!");
-            return;
-        }
+        if (audioMixer != null)
+            audioMixer.SetFloat(ExposedMusicVolumeParam, isMusicOn ? 0f : -80f);
+    }
 
-        float volumeDB = isMusicOn ? 0f : -80f;
-        musicMixer.SetFloat(ExposedMusicVolumeParam, volumeDB);
+    private void ApplySFXState()
+    {
+        if (audioMixer != null)
+            audioMixer.SetFloat(ExposedSFXVolumeParam, isSFXOn ? 0f : -80f);
+    }
+
+    // Icon update methods
+    private void UpdateMusicIcon()
+    {
+        if (musicIconImage != null && iconOnSprite != null && iconOffSprite != null)
+        {
+            musicIconImage.sprite = isMusicOn ? iconOnSprite : iconOffSprite;
+        }
+    }
+
+    private void UpdateSFXIcon()
+    {
+        if (sfxIconImage != null && iconOnSprite != null && iconOffSprite != null)
+        {
+            sfxIconImage.sprite = isSFXOn ? iconOnSprite : iconOffSprite;
+        }
+    }
+
+    private void UpdateAllIcons()
+    {
+        UpdateMusicIcon();
+        UpdateSFXIcon();
     }
 }

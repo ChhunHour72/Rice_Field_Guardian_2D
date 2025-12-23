@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 137817430}
   - component: {fileID: 137817429}
   - component: {fileID: 137817428}
+  - component: {fileID: 137817431}
   m_Layer: 5
   m_Name: X_button_sound
   m_TagString: Untagged
@@ -203,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 137817429}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4764215773503772792, guid: a6a403c6c12d24a38a2fb916f576d221, type: 3}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: StaticMuteSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &137817429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +255,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137817426}
   m_CullTransparentMesh: 1
+--- !u!114 &137817431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137817426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3925684800c44f2497fc6e3168d0bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &826667800
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +363,7 @@ GameObject:
   - component: {fileID: 848204116}
   - component: {fileID: 848204115}
   - component: {fileID: 848204114}
+  - component: {fileID: 848204117}
   m_Layer: 5
   m_Name: Back_button
   m_TagString: Untagged
@@ -458,6 +484,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848204112}
   m_CullTransparentMesh: 1
+--- !u!114 &848204117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848204112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3925684800c44f2497fc6e3168d0bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &871210790
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +579,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4764215773503772792, guid: a6a403c6c12d24a38a2fb916f576d221, type: 3}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
         m_MethodName: StaticMuteMusic
         m_Mode: 1
@@ -600,11 +638,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 871210790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1df13b8a628d4d23ba50f6e0747e36a, type: 3}
+  m_Script: {fileID: 11500000, guid: c3925684800c44f2497fc6e3168d0bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMuteButton: 1
-  isToggleButton: 0
 --- !u!1 &939551757
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,7 +829,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1121918088}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4764215773503772792, guid: a6a403c6c12d24a38a2fb916f576d221, type: 3}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: StaticUnmuteMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1121918088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -841,11 +889,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1121918085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1df13b8a628d4d23ba50f6e0747e36a, type: 3}
+  m_Script: {fileID: 11500000, guid: c3925684800c44f2497fc6e3168d0bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMuteButton: 0
-  isToggleButton: 0
 --- !u!1 &1250613503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,8 +1276,9 @@ GameObject:
   - component: {fileID: 2000267135}
   - component: {fileID: 2000267134}
   - component: {fileID: 2000267133}
+  - component: {fileID: 2000267136}
   m_Layer: 5
-  m_Name: check_button_music (2)
+  m_Name: check_button_sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1299,7 +1346,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2000267134}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4764215773503772792, guid: a6a403c6c12d24a38a2fb916f576d221, type: 3}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: StaticUnmuteSFX
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2000267134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1338,6 +1397,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000267131}
   m_CullTransparentMesh: 1
+--- !u!114 &2000267136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000267131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3925684800c44f2497fc6e3168d0bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -121,6 +121,17 @@ public class AudioManager : MonoBehaviour
     public bool IsMusicOn() => isMusicOn;
     public bool IsSFXOn() => isSFXOn;
 
+    // Initialize state from PlayerPrefs
+    public void InitialState()
+    {
+        isMusicOn = PlayerPrefs.GetInt(MusicPrefKey, 1) == 1;
+        isSFXOn = PlayerPrefs.GetInt(SFXPrefKey, 1) == 1;
+
+        ApplyMusicState();
+        ApplySFXState();
+        UpdateAllIcons();
+    }
+
     // Static methods for buttons
     public static void StaticMuteMusic() => Instance?.SetMusicOn(false);
     public static void StaticUnmuteMusic() => Instance?.SetMusicOn(true);

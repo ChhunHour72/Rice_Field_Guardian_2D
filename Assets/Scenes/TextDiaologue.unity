@@ -250,15 +250,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1de5fca0f457e842ac00d07781921bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 0}
+  textComponent: {fileID: 205181767}
   characterImage: {fileID: 2138877841}
   lineImages:
   - {fileID: 1566345056, guid: 9dd5b2f662efbe4428763dd70c20544f, type: 3}
   - {fileID: 535878699, guid: 9dd5b2f662efbe4428763dd70c20544f, type: 3}
   - {fileID: -969126526, guid: 9dd5b2f662efbe4428763dd70c20544f, type: 3}
   lines:
-  - Hello, My name is Crazy Reach!
-  - Happy to be your guide here
+  - Hello, I am Crazy Reach!
+  - Glad to be your guide here!
   - Go fuck yourself
   textSpeed: 0.07
   continueIndicator: {fileID: 117895288}

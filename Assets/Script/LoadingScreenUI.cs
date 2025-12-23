@@ -1,56 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
-using UnityEngine.EventSystems;
+using TMPro;
 
 public class LoadingScreenUI : MonoBehaviour
 {
     [SerializeField] private Slider progressBar;
-    [SerializeField] private Text loadingText;
-    [SerializeField] private Image hoverImage;
     [SerializeField] private float fakeLoadDelay = 2f;
     [SerializeField] private String sceneName;
+    [SerializeField] private float dotAnimationSpeed = 0.5f; // Time between dot updates
+    
+    private int dotCount = 1; // Current number of dots (1, 2, 3, 2, 1, 2, 3...)
+    private bool dotIncreasing = true; // Whether dots are increasing or decreasing
 
 
     void Start()
     {
-        // Hide hover image initially
-        if (hoverImage != null)
-            hoverImage.enabled = false;
-
-        // Add event triggers for hover
-        EventTrigger trigger = progressBar.gameObject.AddComponent<EventTrigger>();
-        
-        // On Pointer Enter
-        EventTrigger.Entry pointerEnter = new EventTrigger.Entry();
-        pointerEnter.eventID = EventTriggerType.PointerEnter;
-        pointerEnter.callback.AddListener((data) => { OnHoverEnter(); });
-        trigger.triggers.Add(pointerEnter);
-        
-        // On Pointer Exit
-        EventTrigger.Entry pointerExit = new EventTrigger.Entry();
-        pointerExit.eventID = EventTriggerType.PointerExit;
-        pointerExit.callback.AddListener((data) => { OnHoverExit(); });
-        trigger.triggers.Add(pointerExit);
-
         StartCoroutine(LoadSceneAsync());
-    }
-
-    private void OnHoverEnter()
-    {
-        if (hoverImage != null)
-            hoverImage.enabled = true;
-    }
-
-    private void OnHoverExit()
-    {
-        if (hoverImage != null)
-            hoverImage.enabled = false;
     }
 
     IEnumerator LoadSceneAsync()
@@ -58,23 +27,20 @@ public class LoadingScreenUI : MonoBehaviour
         yield return new WaitForSeconds(fakeLoadDelay);
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
         operation.allowSceneActivation = false;
+        
+        float dotTimer = 0f;
+        
         while (!operation.isDone)
         {
             float progress = Mathf.Clamp01(operation.progress / 0.9f);
             progressBar.value = progress;
-            loadingText.text = $"Loading...{Mathf.Floor(progress * 100)}%";
-
-            // Move the hover image along with the progress bar
-            if (hoverImage != null)
+            
+            // Update dot animation
+            dotTimer += Time.deltaTime;
+            if (dotTimer >= dotAnimationSpeed)
             {
-                RectTransform barRect = progressBar.GetComponent<RectTransform>();
-                RectTransform imageRect = hoverImage.GetComponent<RectTransform>();
-                
-                // Calculate the position based on progress
-                float barWidth = barRect.rect.width;
-                float newXPosition = (progress * barWidth) - (barWidth / 2f);
-                
-                imageRect.anchoredPosition = new Vector2(newXPosition, imageRect.anchoredPosition.y);
+                dotTimer = 0f;
+                UpdateDotCount();
             }
 
             if (operation.progress >= 0.9f)
@@ -82,6 +48,28 @@ public class LoadingScreenUI : MonoBehaviour
                 operation.allowSceneActivation = true;
             }
             yield return null;
+        }
+    }
+    
+    void UpdateDotCount()
+    {
+        if (dotIncreasing)
+        {
+            dotCount++;
+            if (dotCount >= 3)
+            {
+                dotCount = 3;
+                dotIncreasing = false;
+            }
+        }
+        else
+        {
+            dotCount--;
+            if (dotCount <= 1)
+            {
+                dotCount = 1;
+                dotIncreasing = true;
+            }
         }
     }
 }

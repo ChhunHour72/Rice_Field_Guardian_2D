@@ -16,16 +16,16 @@ public class ObjectContainer : MonoBehaviour
     }
 
 
-    public void OnTriggerEnter2D(Collider2D collision)
+    public void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
-        if(gameManager.draggingObject != null && isFull == false)
+        if(collision.gameObject.CompareTag("Defender_Object") && isFull == false)
         {
             gameManager.currentContainer = this.gameObject;
-            backgroundImage.enabled = false;
+            backgroundImage.enabled = true;
         }
     }
 
-    public void OnTriggerExit2D(Collider2D collision)
+    public void OnCollisionExit2D(UnityEngine.Collision2D collision)
     {
         gameManager.currentContainer = null;
         backgroundImage.enabled = false;

@@ -5,6 +5,8 @@ using UnityEngine;
 public class ConveyorSpawner : MonoBehaviour
 {
      public Transform[] spawnpoints;
+     public float minSecond = 1f;
+     public float maxSecond = 15f;
 
     // Drag your 3 guardian prefabs here
     public GameObject[] guardians;
@@ -18,7 +20,7 @@ public class ConveyorSpawner : MonoBehaviour
     {
         while (true)
         {
-            float delay = Random.Range(1f, 5f);
+            float delay = Random.Range(minSecond, maxSecond);
             yield return new WaitForSeconds(delay);
             SpawnDefender();
         }

@@ -5,7 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Checkpoint
+<<<<<<< HEAD
+  - Defender_Object
+=======
   - Enemy
+>>>>>>> 811f92fbcbca7745c2bfd72ba7da6a8b48e4f107
   layers:
   - Default
   - TransparentFX

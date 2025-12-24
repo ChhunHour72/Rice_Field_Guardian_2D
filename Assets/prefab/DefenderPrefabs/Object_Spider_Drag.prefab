@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7542603829958438248
+--- !u!1 &5301513571499625989
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,26 +8,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1882292813349104807}
-  - component: {fileID: 5431850461366565918}
-  - component: {fileID: 4993887356526449293}
-  - component: {fileID: 7613188105581108083}
-  - component: {fileID: -3619388913943452772}
-  - component: {fileID: 780101690091113179}
-  m_Layer: 0
-  m_Name: Crow_Slot
-  m_TagString: Untagged
+  - component: {fileID: 6642597123837868257}
+  - component: {fileID: 4592097834931637426}
+  - component: {fileID: 400018178560799241}
+  - component: {fileID: 4778774598194146522}
+  - component: {fileID: 4375072706639632717}
+  - component: {fileID: 5811752132554761988}
+  m_Layer: 5
+  m_Name: Object_Spider_Drag
+  m_TagString: Defender_Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1882292813349104807
+--- !u!224 &6642597123837868257
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7542603829958438248}
+  m_GameObject: {fileID: 5301513571499625989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -37,24 +37,24 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -163, y: -60}
-  m_SizeDelta: {x: 339.5504, y: 179.6653}
+  m_AnchoredPosition: {x: -324, y: 1030.7}
+  m_SizeDelta: {x: 137.8733, y: 116.8089}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &5431850461366565918
+--- !u!222 &4592097834931637426
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7542603829958438248}
+  m_GameObject: {fileID: 5301513571499625989}
   m_CullTransparentMesh: 1
---- !u!114 &4993887356526449293
+--- !u!114 &400018178560799241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7542603829958438248}
+  m_GameObject: {fileID: 5301513571499625989}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 60800e3ab1b7778409458dc08db2fdad, type: 3}
+  m_Sprite: {fileID: -1299996422, guid: a8e50bee61e63f047a83eed3d346a24a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -78,29 +78,40 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7613188105581108083
-MonoBehaviour:
+--- !u!50 &4778774598194146522
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7542603829958438248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d035c8191397aa489549c3619fbef9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  object_drag: {fileID: 0}
-  object_game: {fileID: 0}
-  canvas: {fileID: 0}
---- !u!61 &-3619388913943452772
+  m_GameObject: {fileID: 5301513571499625989}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &4375072706639632717
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7542603829958438248}
+  m_GameObject: {fileID: 5301513571499625989}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -126,7 +137,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.9700928, y: 3.3952942}
+  m_Offset: {x: -1.2400513, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -137,32 +148,18 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 183.37598, y: 170.76495}
+  m_Size: {x: 94.21326, y: 100}
   m_EdgeRadius: 0
---- !u!50 &780101690091113179
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!114 &5811752132554761988
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7542603829958438248}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_GameObject: {fileID: 5301513571499625989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd392792f6dba149b2480442a3253e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}

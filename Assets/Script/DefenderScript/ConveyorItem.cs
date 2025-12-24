@@ -11,10 +11,16 @@ public class ConveyorItem : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
     public GameObject object_game;
     public Canvas canvas;
     private GameObject objectDragInstance;
+    private GameManager gameManager;
 
 
     private Rigidbody2D rb;
     
+    private void Start()
+    {
+        gameManager = GameManager.instance;
+    }
+
 
     private void Awake()
     {
@@ -25,7 +31,6 @@ public class ConveyorItem : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
     {
         if (collision.gameObject.CompareTag("Checkpoint"))
         {
-            Debug.Log("DESTROYED");
             Destroy(gameObject);
         }
     }
@@ -47,12 +52,15 @@ public class ConveyorItem : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
     {
         objectDragInstance = Instantiate(object_drag, canvas.transform);
         objectDragInstance.transform.position = Input.mousePosition;
-        GameManager.instance.draggingObject = objectDragInstance;
+        objectDragInstance.GetComponent<ObjectDragging>().card = this;
+        gameManager.draggingObject = objectDragInstance;
+
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        GameManager.instance.draggingObject = null;
+        gameManager.PlaceObject();
+        gameManager.draggingObject = null;
         Destroy(objectDragInstance);
     }
 

@@ -59,9 +59,9 @@ public class ConveyorItem : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        gameManager.PlaceObject();
         gameManager.draggingObject = null;
         Destroy(objectDragInstance);
-        gameManager.PlaceObject();
     }
 
 

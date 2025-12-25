@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ant : MonoBehaviour
 {
     [Header("Movement")]
-    public float speed = 0.02f;
+    public float speed = 0.004f;
     
     [Header("Health")]
     public int maxHealth = 30;
@@ -79,14 +80,17 @@ public class Ant : MonoBehaviour
     
     void ReachEnd()
     {
-        Debug.Log("⚠️ " + enemyType + " reached the end!");
+        
         
         // Damage rice field (implement later)
         if(GameManager.instance != null)
         {
             // GameManager.instance.TakeDamage(10);
         }
-        
+
         Destroy(gameObject);
+        SceneManager.LoadScene("LooseScene_1");
+        
     }
+    
 }

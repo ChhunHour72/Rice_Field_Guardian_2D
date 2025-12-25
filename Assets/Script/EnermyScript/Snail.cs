@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Snail : MonoBehaviour
 {
@@ -98,6 +99,7 @@ public class Snail : MonoBehaviour
         {
             // GameManager.instance.TakeDamage(15);  // More damage - tanky enemy
         }
+        SceneManager.LoadScene("LooseScene_1");
         
         Destroy(gameObject);
     }

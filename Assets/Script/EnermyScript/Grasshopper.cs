@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Grasshopper : MonoBehaviour
 {
@@ -155,6 +156,7 @@ public class Grasshopper : MonoBehaviour
         {
             // GameManager.instance.TakeDamage(10);
         }
+        SceneManager.LoadScene("LooseScene_1");
         
         Destroy(gameObject);
     }

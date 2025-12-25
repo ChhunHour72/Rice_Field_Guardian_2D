@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5370794491820539140}
   - component: {fileID: 2778565541601988333}
-  - component: {fileID: 8214448831518259414}
   - component: {fileID: 7603165338389533164}
   - component: {fileID: 475700551498698028}
+  - component: {fileID: 9058168019439025409}
   m_Layer: 5
   m_Name: ant
   m_TagString: Untagged
@@ -47,27 +47,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3588279000892909105}
   m_CullTransparentMesh: 1
---- !u!95 &8214448831518259414
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3588279000892909105}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 88712e96e8701334f870819ae9036544, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &7603165338389533164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,3 +92,24 @@ MonoBehaviour:
   speed: 2.5
   maxHealth: 30
   enemyType: Ant
+--- !u!95 &9058168019439025409
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3588279000892909105}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d1a54b0b57d8ea04b9c5b8fd071f9981, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

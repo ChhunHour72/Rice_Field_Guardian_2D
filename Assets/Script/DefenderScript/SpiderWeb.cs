@@ -5,16 +5,42 @@ using UnityEngine;
 public class SpiderWeb : MonoBehaviour
 {
     [Header("Projectile Settings")]
-    public float speed = 8f;              // FASTER: Easier to see
+    public float speed = 8f;
     public int damage = 10;
     
     private Transform target;
     private Vector3 direction;
     private bool isInitialized = false;
+    private Rigidbody2D rb;
     
     void Start()
     {
-        // ADDED: Force visibility settings
+        // Add Rigidbody2D if not present
+        rb = GetComponent<Rigidbody2D>();
+        if(rb == null)
+        {
+            rb = gameObject.AddComponent<Rigidbody2D>();
+        }
+        
+        // Configure Rigidbody2D for projectile
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.gravityScale = 0;
+        
+        // Make sure we have a collider
+        Collider2D col = GetComponent<Collider2D>();
+        if(col == null)
+        {
+            CircleCollider2D circleCol = gameObject.AddComponent<CircleCollider2D>();
+            circleCol.radius = 0.3f;
+            circleCol.isTrigger = true;
+            Debug.Log("✅ Added Circle Collider to web");
+        }
+        else
+        {
+            col.isTrigger = true;
+            Debug.Log("✅ Web collider is trigger: " + col.isTrigger);
+        }
+        
         SpriteRenderer renderer = GetComponent<SpriteRenderer>();
         if(renderer != null)
         {
@@ -28,7 +54,6 @@ public class SpiderWeb : MonoBehaviour
             Debug.LogError("⚠️ SpiderWeb has no SpriteRenderer!");
         }
         
-        // Auto-destroy after 3 seconds
         Destroy(gameObject, 3f);
     }
     
@@ -37,20 +62,15 @@ public class SpiderWeb : MonoBehaviour
         target = enemyTarget;
         damage = webDamage;
         
-        // Calculate STRAIGHT direction (no Y movement for straight lane)
         if(target != null)
         {
             direction = (target.position - transform.position).normalized;
-            
-            // OPTIONAL: Force perfectly horizontal
-            // direction = Vector3.right; // Uncomment for PERFECTLY straight
         }
         else
         {
-            direction = Vector3.right; // Default right
+            direction = Vector3.right;
         }
         
-        // Rotate sprite to face direction
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
         
@@ -67,12 +87,8 @@ public class SpiderWeb : MonoBehaviour
             return;
         }
         
-        // Move the web in STRAIGHT line
         Vector3 movement = direction * speed * Time.deltaTime;
         transform.position += movement;
-        
-        // Debug: Show position every frame
-        // Debug.Log("🕸️ Web position: " + transform.position);
     }
     
     void OnTriggerEnter2D(Collider2D collision)
@@ -82,19 +98,62 @@ public class SpiderWeb : MonoBehaviour
         // Check if we hit an enemy
         if(collision.CompareTag("Enemy"))
         {
-            Ant enemy = collision.GetComponent<Ant>();
-            if(enemy != null)
+            // Try to find ANY enemy script and call TakeDamage
+            bool hitEnemy = false;
+            
+            // Try Ant
+            Ant ant = collision.GetComponent<Ant>();
+            if(ant != null)
             {
-                enemy.TakeDamage(damage);
-                Debug.Log("💥 Web hit " + enemy.enemyType + " for " + damage + " damage!");
+                Debug.Log("✅ Found Ant script!");
+                ant.TakeDamage(damage);
+                Debug.Log("💥 Web hit Ant for " + damage + " damage!");
+                hitEnemy = true;
+            }
+            
+            // Try Grasshopper
+            Grasshopper grasshopper = collision.GetComponent<Grasshopper>();
+            if(grasshopper != null)
+            {
+                Debug.Log("✅ Found Grasshopper script!");
+                grasshopper.TakeDamage(damage);
+                Debug.Log("💥 Web hit Grasshopper for " + damage + " damage!");
+                hitEnemy = true;
+            }
+            
+            // Try Snail
+            Snail snail = collision.GetComponent<Snail>();
+            if(snail != null)
+            {
+                Debug.Log("✅ Found Snail script!");
+                snail.TakeDamage(damage);
+                Debug.Log("💥 Web hit Snail for " + damage + " damage!");
+                hitEnemy = true;
+            }
+            
+            if(!hitEnemy)
+            {
+                Debug.LogWarning("⚠️ Hit enemy but no damage script found!");
+                
+                // List all components on the enemy
+                MonoBehaviour[] components = collision.GetComponents<MonoBehaviour>();
+                string componentNames = "";
+                foreach(var comp in components)
+                {
+                    componentNames += comp.GetType().Name + ", ";
+                }
+                Debug.LogWarning("⚠️ Enemy components: " + componentNames);
             }
             
             // Destroy the web after hitting
             Destroy(gameObject);
         }
+        else
+        {
+            Debug.LogWarning("⚠️ Collision but tag is: " + collision.tag + " (expected 'Enemy')");
+        }
     }
     
-    // Visualize in Scene view
     void OnDrawGizmos()
     {
         Gizmos.color = Color.cyan;

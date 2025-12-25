@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4740416665816266733
+--- !u!1 &7675092429705595986
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2089992583111738356}
-  - component: {fileID: 5831898453431774161}
-  - component: {fileID: 3949378647127014394}
-  - component: {fileID: 6468927821268023966}
-  - component: {fileID: -5331121341981502775}
+  - component: {fileID: 3623355355553627729}
+  - component: {fileID: 7999947893792555351}
+  - component: {fileID: 4102556656222142000}
+  - component: {fileID: 2810132808117767191}
   m_Layer: 0
-  m_Name: ant_sprites_7
-  m_TagString: Enemy
+  m_Name: frog_eating_0
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2089992583111738356
+--- !u!4 &3623355355553627729
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4740416665816266733}
+  m_GameObject: {fileID: 7675092429705595986}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 10.97, y: -1.13, z: 0}
-  m_LocalScale: {x: 0.13635, y: 0.1, z: 0.1}
-  m_ConstrainProportionsScale: 1
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.06, y: -1.85, z: 0}
+  m_LocalScale: {x: 0.16, y: 0.16, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!212 &5831898453431774161
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &7999947893792555351
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4740416665816266733}
+  m_GameObject: {fileID: 7675092429705595986}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -73,63 +72,27 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -152391743
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -952763046, guid: 60409c2942aba8649ab3146e2eaabac1, type: 3}
+  m_Sprite: {fileID: -1467125525, guid: 1e3e0b1867a5d5e4a99434b8b76305bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 8.4375, y: 7.46875}
+  m_Size: {x: 8.065067, y: 5.6875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3949378647127014394
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4740416665816266733}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d1b1d20e74cc54e40bc796538f5e4082, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6468927821268023966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4740416665816266733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fef42e180388d7f47a71f1bbbb5d997d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.006
-  maxHealth: 30
-  enemyType: Ant
---- !u!61 &-5331121341981502775
+--- !u!61 &4102556656222142000
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4740416665816266733}
+  m_GameObject: {fileID: 7675092429705595986}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -152,19 +115,38 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.4375, y: 7.46875}
-    newSize: {x: 8.4375, y: 7.46875}
+    oldSize: {x: 8.065067, y: 5.6875}
+    newSize: {x: 8.065067, y: 5.6875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.4375, y: 7.46875}
+  m_Size: {x: 8.065067, y: 5.6875}
   m_EdgeRadius: 0
+--- !u!114 &2810132808117767191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7675092429705595986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2241f0fe5550ef842a279dcdc9bc2d4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 1.2
+  biteDamage: 100
+  digestionTime: 3
+  canEat:
+  - Ant
+  - Grasshopper
+  detectionRangeY: 0.3

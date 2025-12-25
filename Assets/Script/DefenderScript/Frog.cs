@@ -6,8 +6,12 @@ public class Frog : MonoBehaviour
 {
     [Header("Frog Stats")]
     public float attackRange = 1.2f;      // Close range for eating
-    public float attackRate = 0.5f;       // Fast attacks (2 per second)
     public int biteDamage = 100;          // Instant kill damage
+    
+    [Header("Digestion System")]
+    public float digestionTime = 3f;      // How long to digest (seconds)
+    private bool isDigesting = false;     // Is frog currently digesting?
+    private float digestionEndTime = 0f;
     
     [Header("Target Types")]
     public List<string> canEat = new List<string> { "Ant", "Grasshopper" };
@@ -15,30 +19,48 @@ public class Frog : MonoBehaviour
     [Header("Detection Settings")]
     public float detectionRangeY = 0.3f;  // Strict same lane detection
     
-    private float nextAttackTime = 0f;
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
     
     void Start()
     {
         animator = GetComponent<Animator>();
-        Debug.Log("🐸 Frog ready! Can eat: " + string.Join(", ", canEat));
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        Debug.Log("🐸 Frog ready! Can eat: " + string.Join(", ", canEat) + " | Digestion time: " + digestionTime + "s");
     }
     
     void Update()
     {
+        // Check if digestion is complete
+        if(isDigesting)
+        {
+            if(Time.time >= digestionEndTime)
+            {
+                FinishDigestion();
+            }
+            else
+            {
+                // Still digesting - can't attack
+                return;
+            }
+        }
+        
+        // Look for food
         DetectAndEat();
     }
     
     void DetectAndEat()
     {
+        // Don't look for food while digesting
+        if(isDigesting) return;
+        
         // Find enemies in range
         GameObject targetEnemy = FindClosestEdibleEnemy();
         
-        // If we found food and cooldown is ready
-        if(targetEnemy != null && Time.time >= nextAttackTime)
+        // If we found food, eat it!
+        if(targetEnemy != null)
         {
             EatEnemy(targetEnemy);
-            nextAttackTime = Time.time + (1f / attackRate);
         }
     }
     
@@ -51,22 +73,30 @@ public class Frog : MonoBehaviour
         
         foreach(GameObject enemy in allEnemies)
         {
-            // Get enemy type
-            Ant antScript = enemy.GetComponent<Ant>();
-            if(antScript == null) continue;
+            // Get enemy type - check for any enemy script
+            string enemyTypeStr = "";
+            
+            Ant ant = enemy.GetComponent<Ant>();
+            if(ant != null) enemyTypeStr = ant.enemyType;
+            
+            Grasshopper grasshopper = enemy.GetComponent<Grasshopper>();
+            if(grasshopper != null) enemyTypeStr = grasshopper.enemyType;
+            
+            Snail snail = enemy.GetComponent<Snail>();
+            if(snail != null) enemyTypeStr = snail.enemyType;
+            
+            if(string.IsNullOrEmpty(enemyTypeStr)) continue;
             
             // Check if frog can eat this type
-            if(!canEat.Contains(antScript.enemyType))
+            if(!canEat.Contains(enemyTypeStr))
             {
-                continue; // Skip enemies frog can't eat
+                continue;
             }
             
-            // Check if in same lane (straight line)
             float yDifference = Mathf.Abs(enemy.transform.position.y - transform.position.y);
             
             if(yDifference <= detectionRangeY)
             {
-                // Check distance (frog can eat enemies from both sides)
                 float distance = Vector3.Distance(transform.position, enemy.transform.position);
                 
                 if(distance <= attackRange)
@@ -85,31 +115,78 @@ public class Frog : MonoBehaviour
     
     void EatEnemy(GameObject enemy)
     {
-        // Play attack/eat animation
         if(animator != null)
         {
             animator.SetTrigger("Attack");
         }
         
-        Ant antScript = enemy.GetComponent<Ant>();
-        if(antScript != null)
+        // Try each enemy type
+        Ant ant = enemy.GetComponent<Ant>();
+        if(ant != null)
         {
-            // Instant kill - massive damage
-            antScript.TakeDamage(biteDamage);
-            
-            Debug.Log("🐸 Frog ate " + antScript.enemyType + "! *CHOMP*");
+            ant.TakeDamage(biteDamage);
+            Debug.Log("🐸 Frog ate " + ant.enemyType + "! *CHOMP*");
+            return;
         }
+        
+        Grasshopper grasshopper = enemy.GetComponent<Grasshopper>();
+        if(grasshopper != null)
+        {
+            grasshopper.TakeDamage(biteDamage);
+            Debug.Log("🐸 Frog ate " + grasshopper.enemyType + "! *CHOMP*");
+            return;
+        }
+        
+        Snail snail = enemy.GetComponent<Snail>();
+        if(snail != null)
+        {
+            snail.TakeDamage(biteDamage);
+            Debug.Log("🐸 Frog ate " + snail.enemyType + "! *CHOMP*");
+            return;
+        }
+    }
+    
+    void StartDigestion()
+    {
+        isDigesting = true;
+        digestionEndTime = Time.time + digestionTime;
+        
+        // Visual feedback: Change color during digestion
+        if(spriteRenderer != null)
+        {
+            spriteRenderer.color = new Color(0.7f, 1f, 0.7f); // Light green tint
+        }
+        
+        Debug.Log("😴 Frog is digesting... (will be ready at " + digestionEndTime + ")");
+    }
+    
+    void FinishDigestion()
+    {
+        isDigesting = false;
+        
+        // Return to normal color
+        if(spriteRenderer != null)
+        {
+            spriteRenderer.color = Color.white;
+        }
+
+            if(animator != null)
+        {
+        animator.SetTrigger("Burp");
+        }
+        
+        Debug.Log("✅ Frog finished digesting! Ready to eat again!");
     }
     
     // Visualize detection range in Scene view
     void OnDrawGizmosSelected()
     {
         // Draw attack range circle
-        Gizmos.color = Color.green;
+        Gizmos.color = isDigesting ? Color.gray : Color.green;
         Gizmos.DrawWireSphere(transform.position, attackRange);
         
         // Draw detection lane (Y range)
-        Gizmos.color = Color.cyan;
+        Gizmos.color = isDigesting ? Color.gray : Color.cyan;
         Vector3 center = transform.position;
         
         // Draw the detection box
@@ -124,7 +201,14 @@ public class Frog : MonoBehaviour
         Gizmos.DrawLine(topRight, bottomRight);
         
         // Draw center indicator
-        Gizmos.color = Color.red;
+        Gizmos.color = isDigesting ? Color.yellow : Color.red;
         Gizmos.DrawWireSphere(transform.position, 0.2f);
+        
+        // Show digestion status text in Scene view
+        if(isDigesting)
+        {
+            UnityEditor.Handles.Label(transform.position + Vector3.up, 
+                "DIGESTING: " + (digestionEndTime - Time.time).ToString("F1") + "s");
+        }
     }
 }

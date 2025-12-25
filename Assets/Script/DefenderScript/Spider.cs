@@ -37,6 +37,21 @@ public class Spider : MonoBehaviour
     
     void Update()
     {
+        GameObject target = FindClosestEnemyInStraightLine();
+        
+        if(target != null)
+        {
+            float dist = Vector3.Distance(transform.position, target.transform.position);
+            float yDiff = Mathf.Abs(target.transform.position.y - transform.position.y);
+            float xDist = target.transform.position.x - transform.position.x;
+            
+            Debug.Log($"🎯 Spider found enemy: {target.name} | X-dist: {xDist:F2} | Y-diff: {yDiff:F2} | Total: {dist:F2}");
+        }
+        else
+        {
+            Debug.Log("❌ Spider found NO enemies");
+        }
+        
         DetectAndShoot();
     }
     

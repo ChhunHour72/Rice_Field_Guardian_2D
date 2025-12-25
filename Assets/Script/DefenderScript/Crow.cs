@@ -5,19 +5,20 @@ using UnityEngine;
 public class Crow : MonoBehaviour
 {
     [Header("Crow Stats")]
-    public float attackRange = 1.2f;
-    public float attackRate = 0.7f;
-    public int peckDamage = 20;
+    public float attackRange = 1.5f;      // Slightly longer than frog
+    public float attackRate = 0.7f;       // ~1.4 attacks per second
+    public int peckDamage = 20;           // Medium damage (not instant kill)
     
-    [Header("Detection")]
-    public float detectionRangeY = 0.5f;
+    [Header("Detection Settings")]
+    public float detectionRangeY = 0.3f;  // Strict same lane detection
     
-    private float nextAttackTime;
+    private float nextAttackTime = 0f;
     private Animator animator;
     
     void Start()
     {
         animator = GetComponent<Animator>();
+        Debug.Log("🐦 Crow ready! Can attack ANY insect | Range: " + attackRange + " | Damage: " + peckDamage);
     }
     
     void Update()
@@ -27,54 +28,105 @@ public class Crow : MonoBehaviour
     
     void DetectAndPeck()
     {
-        // Find all enemies
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        // Find any enemy in range
+        GameObject targetEnemy = FindClosestEnemy();
         
-        foreach(GameObject enemyObj in enemies)
+        // If we found an enemy and cooldown is ready
+        if(targetEnemy != null && Time.time >= nextAttackTime)
         {
-            // Check if in same row
-            float yDifference = Mathf.Abs(enemyObj.transform.position.y - transform.position.y);
-            
-            if(yDifference <= detectionRangeY)
-            {
-                // Check distance
-                float distance = Vector3.Distance(transform.position, enemyObj.transform.position);
-                
-                if(distance <= attackRange && Time.time >= nextAttackTime)
-                {
-                    PeckEnemy(enemyObj);
-                    nextAttackTime = Time.time + 1f / attackRate;
-                    break; // Attack one at a time
-                }
-            }
+            PeckEnemy(targetEnemy);
+            nextAttackTime = Time.time + (1f / attackRate);
         }
     }
     
-    void PeckEnemy(GameObject enemyObj)
+    GameObject FindClosestEnemy()
+    {
+        GameObject[] allEnemies = GameObject.FindGameObjectsWithTag("Enemy");
+        
+        GameObject closestEnemy = null;
+        float closestDistance = attackRange;
+        
+        foreach(GameObject enemy in allEnemies)
+        {
+            // Check if in same lane (straight line)
+            float yDifference = Mathf.Abs(enemy.transform.position.y - transform.position.y);
+            
+            if(yDifference <= detectionRangeY)
+            {
+                // Check distance (crow can attack from both sides)
+                float distance = Vector3.Distance(transform.position, enemy.transform.position);
+                
+                if(distance <= attackRange)
+                {
+                    if(distance < closestDistance)
+                    {
+                        closestDistance = distance;
+                        closestEnemy = enemy;
+                    }
+                }
+            }
+        }
+        
+        return closestEnemy;
+    }
+    
+    void PeckEnemy(GameObject enemy)
     {
         if(animator != null)
         {
             animator.SetTrigger("Attack");
         }
         
-        Ant enemy = enemyObj.GetComponent<Ant>();
-        if(enemy != null)
+        // Try each enemy type
+        Ant ant = enemy.GetComponent<Ant>();
+        if(ant != null)
         {
-            enemy.TakeDamage(peckDamage);
-            Debug.Log("Crow pecked " + enemy.enemyType + "!");
+            ant.TakeDamage(peckDamage);
+            Debug.Log("🐦 Crow pecked " + ant.enemyType + " for " + peckDamage + " damage!");
+            return;
+        }
+        
+        Grasshopper grasshopper = enemy.GetComponent<Grasshopper>();
+        if(grasshopper != null)
+        {
+            grasshopper.TakeDamage(peckDamage);
+            Debug.Log("🐦 Crow pecked " + grasshopper.enemyType + " for " + peckDamage + " damage!");
+            return;
+        }
+        
+        Snail snail = enemy.GetComponent<Snail>();
+        if(snail != null)
+        {
+            snail.TakeDamage(peckDamage);
+            Debug.Log("🐦 Crow pecked " + snail.enemyType + " for " + peckDamage + " damage!");
+            return;
         }
     }
     
+    // Visualize detection range in Scene view
     void OnDrawGizmosSelected()
     {
+        // Draw attack range circle
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, attackRange);
         
-        // Show detection row
+        // Draw detection lane (Y range)
         Gizmos.color = Color.magenta;
-        Vector3 topPos = transform.position + Vector3.up * detectionRangeY;
-        Vector3 bottomPos = transform.position - Vector3.up * detectionRangeY;
-        Gizmos.DrawLine(topPos + Vector3.right * attackRange, topPos + Vector3.left * attackRange);
-        Gizmos.DrawLine(bottomPos + Vector3.right * attackRange, bottomPos + Vector3.left * attackRange);
+        Vector3 center = transform.position;
+        
+        // Draw the detection box
+        Vector3 topLeft = center + new Vector3(-attackRange, detectionRangeY, 0);
+        Vector3 topRight = center + new Vector3(attackRange, detectionRangeY, 0);
+        Vector3 bottomLeft = center + new Vector3(-attackRange, -detectionRangeY, 0);
+        Vector3 bottomRight = center + new Vector3(attackRange, -detectionRangeY, 0);
+        
+        Gizmos.DrawLine(topLeft, topRight);
+        Gizmos.DrawLine(bottomLeft, bottomRight);
+        Gizmos.DrawLine(topLeft, bottomLeft);
+        Gizmos.DrawLine(topRight, bottomRight);
+        
+        // Draw center indicator
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 0.2f);
     }
 }

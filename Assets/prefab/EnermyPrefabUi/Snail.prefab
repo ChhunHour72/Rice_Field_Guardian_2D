@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2005974232450094478}
   - component: {fileID: 1690163077071307430}
   - component: {fileID: 3719478776929155045}
+  - component: {fileID: 4313176945402157177}
   m_Layer: 5
   m_Name: Snail
   m_TagString: Untagged
@@ -93,3 +94,24 @@ MonoBehaviour:
   enemyType: Snail
   hasShell: 1
   shellDamageReduction: 0.5
+--- !u!95 &4313176945402157177
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700053824907825857}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0103be6811e3efd4190961333ecacfce, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

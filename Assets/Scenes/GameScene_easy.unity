@@ -2780,7 +2780,7 @@ MonoBehaviour:
   - {fileID: 6133858926205883688, guid: 0fb24608cfad7684494fda3e1a3be47a, type: 3}
   - {fileID: 1700053824907825857, guid: 4fb088d262686564a8ba334488bdb324, type: 3}
   minTime: 5
-  maxTime: 10
+  maxTime: 20
 --- !u!1001 &760583474
 PrefabInstance:
   m_ObjectHideFlags: 0

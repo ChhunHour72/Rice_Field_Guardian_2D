@@ -27,7 +27,10 @@ public class ObjectContainer : MonoBehaviour
 
     public void OnCollisionExit2D(UnityEngine.Collision2D collision)
     {
+            if(collision.gameObject == GameManager.instance.draggingObject)
+         {
         gameManager.currentContainer = null;
         backgroundImage.enabled = false;
+        }
     }
 }

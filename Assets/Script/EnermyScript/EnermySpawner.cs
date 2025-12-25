@@ -5,29 +5,40 @@ using UnityEngine;
 public class EnermySpawner : MonoBehaviour
 {
     public Transform[] spawnpoints;
+    public GameObject[] enemy;
 
-    public GameObject ant;
+    public float minTime = 5f;
+    public float maxTime = 10f;
 
     private void Start()
     {
         StartCoroutine(SpawnLoop());
     }
 
-     IEnumerator SpawnLoop()
+    IEnumerator SpawnLoop()
     {
         while (true)
         {
-            float delay = Random.Range(10f, 20f);  // Random delay
+            float delay = Random.Range(minTime, maxTime);
             yield return new WaitForSeconds(delay);
 
-            SpawnEnermy();
+            SpawnEnemy();
         }
     }
 
-
-    void SpawnEnermy()
+    void SpawnEnemy()
     {
-        int r = Random.Range(0, spawnpoints.Length);
-        GameObject myEnermy = Instantiate(ant, spawnpoints[r].position, Quaternion.identity);
+        // Random spawn point
+        int spawnIndex = Random.Range(0, spawnpoints.Length);
+
+        // Random enemy
+        int enemyIndex = Random.Range(0, enemy.Length);
+
+        Instantiate(
+            enemy[enemyIndex],
+            spawnpoints[spawnIndex].position,
+            Quaternion.Euler(0f, 180f, 0f),
+            spawnpoints[spawnIndex]
+        );
     }
 }

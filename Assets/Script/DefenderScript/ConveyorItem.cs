@@ -14,6 +14,8 @@ public class ConveyorItem : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
     private GameManager gameManager;
 
 
+
+
     private Rigidbody2D rb;
     
     private void Start()
@@ -45,7 +47,7 @@ public class ConveyorItem : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
 
     public void OnDrag(PointerEventData eventData)
     {
-        objectDragInstance.transform.position = Input.mousePosition;
+    objectDragInstance.transform.position = Input.mousePosition;
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -59,10 +61,15 @@ public class ConveyorItem : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        gameManager.PlaceObject();
-        gameManager.draggingObject = null;
-        Destroy(objectDragInstance);
+
+        if(gameManager.PlaceObject())
+        {
+            Destroy(gameObject);
+        }
+            gameManager.draggingObject = null;
+            Destroy(objectDragInstance);
     }
+
 
 
 

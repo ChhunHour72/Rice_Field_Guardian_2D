@@ -3174,8 +3174,8 @@ MonoBehaviour:
   - {fileID: 3588279000892909105, guid: 43cb25d6600ce384e988f70d12dbae6e, type: 3}
   - {fileID: 6133858926205883688, guid: 0fb24608cfad7684494fda3e1a3be47a, type: 3}
   - {fileID: 1700053824907825857, guid: 4fb088d262686564a8ba334488bdb324, type: 3}
-  minTime: 1
-  maxTime: 1
+  minTime: 5
+  maxTime: 10
 --- !u!1001 &760583474
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5324,7 +5324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1286721085}
-  seconds: 60
+  seconds: 180
 --- !u!114 &1286721085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5345,7 +5345,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 01:00
+  m_text: 03:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b12787d40d19aa428e8a916a00e3b0e, type: 2}
   m_sharedMaterial: {fileID: -5772308408618973334, guid: 8b12787d40d19aa428e8a916a00e3b0e, type: 2}
@@ -7713,8 +7713,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnpoints:
   - {fileID: 1750391121}
-  minSecond: 3
-  maxSecond: 3
+  minSecond: 5
+  maxSecond: 10
   guardians:
   - {fileID: 1723940049}
   - {fileID: 1923074967}

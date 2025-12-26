@@ -177,8 +177,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -152391743
-  m_SortingLayer: 0
+  m_SortingLayerID: 884434159
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1f0e0b0675166403496f3fc23193b989, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -820,8 +820,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 884434159
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: -1860200641, guid: 746d89374bd4a98429b22322eecbbc8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2037,8 +2037,16 @@ PrefabInstance:
       value: spider_shooting_0
       objectReference: {fileID: 0}
     - target: {fileID: 4470033723375930434, guid: 9792ef4f1be43f148baca8abd2943a30, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470033723375930434, guid: 9792ef4f1be43f148baca8abd2943a30, type: 3}
       propertyPath: m_SortingOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470033723375930434, guid: 9792ef4f1be43f148baca8abd2943a30, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 884434159
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2157,6 +2165,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: frog_eating_0
       objectReference: {fileID: 0}
+    - target: {fileID: 7999947893792555351, guid: 9c40fec0bd739ba4a80ba88c47eb125f, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7999947893792555351, guid: 9c40fec0bd739ba4a80ba88c47eb125f, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 884434159
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2213,6 +2229,14 @@ PrefabInstance:
     - target: {fileID: 8671265286675821761, guid: 970c2ba401aa7844dbcc3b06cca48d39, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785421900507544951, guid: 970c2ba401aa7844dbcc3b06cca48d39, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785421900507544951, guid: 970c2ba401aa7844dbcc3b06cca48d39, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 884434159
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

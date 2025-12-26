@@ -22,6 +22,9 @@ public class Dialogue : MonoBehaviour
     
     // Static flag to track if dialogue/tutorial is active
     public static bool isTutorialActive = false;
+    
+    // Flag to track if dialogue has been shown before
+    private string dialogueShownKey = "DialogueShown";
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +32,22 @@ public class Dialogue : MonoBehaviour
         textComponent.text = String.Empty;
         if (continueIndicator != null)
             continueIndicator.enabled = false;
-        StartDialogue();
+        
+        // Only show dialogue if it hasn't been shown before
+        if (!PlayerPrefs.HasKey(dialogueShownKey))
+        {
+            StartDialogue();
+        }
+        else
+        {
+            // Dialogue already shown, close it immediately
+            if (darkOverlay != null)
+                darkOverlay.enabled = false;
+            if (dialogueParent != null)
+                dialogueParent.SetActive(false);
+            else
+                gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -193,6 +211,11 @@ public class Dialogue : MonoBehaviour
     void EndDialogue()
     {
         isTutorialActive = false;
+        
+        // Mark dialogue as shown so it won't appear again
+        PlayerPrefs.SetInt(dialogueShownKey, 1);
+        PlayerPrefs.Save();
+        
         if (darkOverlay != null)
             darkOverlay.enabled = false;
         if (continueIndicator != null)

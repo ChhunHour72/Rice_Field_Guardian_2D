@@ -19,6 +19,13 @@ public class EnermySpawner : MonoBehaviour
     {
         while (true)
         {
+            // Skip spawning while tutorial is active
+            if (Dialogue.isTutorialActive)
+            {
+                yield return new WaitForSeconds(0.5f);
+                continue;
+            }
+            
             float delay = Random.Range(minTime, maxTime);
             yield return new WaitForSeconds(delay);
 

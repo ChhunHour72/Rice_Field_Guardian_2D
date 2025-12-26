@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6642597123837868257}
   - component: {fileID: 4592097834931637426}
   - component: {fileID: 400018178560799241}
+  - component: {fileID: 2834009485196388931}
   m_Layer: 5
   m_Name: Object_Spider_Game
   m_TagString: Untagged
@@ -75,3 +76,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2834009485196388931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5301513571499625989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ada3045cfdfe6449896e0b839fd407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRange: 1500
+  attackRate: 1
+  webDamage: 50
+  spiderWebPrefab: {fileID: 2483085788275755347, guid: 206a1fe1793e2b94381d240acd3adc43, type: 3}
+  shootPoint: {fileID: 0}
+  detectionRangeY: 60

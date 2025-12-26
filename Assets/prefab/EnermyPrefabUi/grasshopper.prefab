@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 100284785779214347}
   m_Layer: 5
   m_Name: grasshopper
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

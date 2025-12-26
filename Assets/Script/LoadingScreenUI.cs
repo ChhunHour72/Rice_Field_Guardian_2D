@@ -10,7 +10,7 @@ public class LoadingScreenUI : MonoBehaviour
 {
     [SerializeField] private Slider progressBar;
     [SerializeField] private float fakeLoadDelay = 2f;
-    [SerializeField] private String sceneName;
+    [SerializeField] private string sceneName;
     [SerializeField] private float dotAnimationSpeed = 0.5f; // Time between dot updates
     
     private int dotCount = 1; // Current number of dots (1, 2, 3, 2, 1, 2, 3...)

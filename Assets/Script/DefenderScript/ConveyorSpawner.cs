@@ -20,6 +20,13 @@ public class ConveyorSpawner : MonoBehaviour
     {
         while (true)
         {
+            // Skip spawning while tutorial is active
+            if (Dialogue.isTutorialActive)
+            {
+                yield return new WaitForSeconds(0.5f);
+                continue;
+            }
+            
             float delay = Random.Range(minSecond, maxSecond);
             yield return new WaitForSeconds(delay);
             SpawnDefender();

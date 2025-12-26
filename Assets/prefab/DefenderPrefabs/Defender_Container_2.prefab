@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6828595325343227960}
   - component: {fileID: 6816722531590892814}
   - component: {fileID: 9091847394350323562}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Defender_Container_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

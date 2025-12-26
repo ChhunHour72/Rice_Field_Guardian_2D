@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fef42e180388d7f47a71f1bbbb5d997d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 2.5
   maxHealth: 30
   enemyType: Ant
 --- !u!95 &9058168019439025409

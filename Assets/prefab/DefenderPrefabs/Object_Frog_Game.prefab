@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5389698637054651582}
   m_Layer: 6
   m_Name: Object_Frog_Game
-  m_TagString: Untagged
+  m_TagString: Defender_Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

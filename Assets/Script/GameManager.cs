@@ -12,15 +12,30 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
-    public bool PlaceObject()
+   public bool PlaceObject()
     {
-        if(draggingObject != null && currentContainer != null)
-        {
-            Instantiate(draggingObject.GetComponent<ObjectDragging>().card.object_game, currentContainer.transform.position, Quaternion.identity, currentContainer.transform);
-            currentContainer.GetComponent<ObjectContainer>().isFull = true;
-            Debug.Log("Placed");
-            return true;
-        }
-        else return false;
+        if (draggingObject == null) return false;
+
+        // Find container under dragged object
+        Collider2D hit = Physics2D.OverlapPoint(
+            draggingObject.transform.position,
+            LayerMask.GetMask("Container")
+        );
+
+        if (hit == null) return false;
+
+        ObjectContainer container = hit.GetComponent<ObjectContainer>();
+        if (container == null || container.isFull) return false;
+
+        Instantiate(
+            draggingObject.GetComponent<ObjectDragging>().card.object_game,
+            container.transform.position,
+            Quaternion.identity,
+            container.transform
+        );
+
+        container.isFull = true;
+        Debug.Log("Placed");
+        return true;
     }
 }
